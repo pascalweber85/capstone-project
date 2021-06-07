@@ -2,19 +2,21 @@ import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
 
 Card.propTypes = {
-  image: PropTypes.string.isRequired,
+  image: PropTypes.node,
   title: PropTypes.string,
-  rating: PropTypes.string,
+  image2: PropTypes.node,
   text: PropTypes.string,
 }
 
-export default function Card({ image, title, rating, text }) {
+export default function Card({ image, title, image2, text }) {
   return (
     <Wrapper>
       <img src={image} alt="" />
-      <h2>{title}</h2>
-      <p>{rating}</p>
-      <p>{text}</p>
+      <div>
+        <h2>{title}</h2>
+        <img src={image2} alt="" />
+        <p>{text}</p>
+      </div>
     </Wrapper>
   )
 }
@@ -23,13 +25,18 @@ const Wrapper = styled.section`
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 8px 16px #0006;
-  display: grid;
-  grid-template-rows: 1fr;
+  display: flex;
+  gap: 10px;
+
   justify-items: end;
-  max-width: 400px;
+  max-width: 350px;
 
   img {
     justify-self: start;
-    max-width: 300px;
+    max-width: 150px;
+  }
+
+  h2 {
+    font-size: 18px;
   }
 `

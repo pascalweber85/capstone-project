@@ -1,5 +1,6 @@
 import Card from './Card'
 import imageFile from './../Images/Völki.jpg'
+import imageFile2 from './../Images/stars.jpg'
 
 export default {
   title: 'Card',
@@ -12,6 +13,6 @@ export const Default = Template.bind({})
 Default.args = {
   image: imageFile,
   title: 'Völkerschlachtdenkmal',
-  rating: 'Stars',
+  image2: imageFile2,
   text: 'Sehenswürdigkeit',
 }
