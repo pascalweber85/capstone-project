@@ -1,0 +1,11 @@
+[
+  {
+    "name": "bulbasaur",
+    "types": ["grass", "poison"],
+    "id": 1,
+    "images": {
+      "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png"
+    }
+  }
+]
