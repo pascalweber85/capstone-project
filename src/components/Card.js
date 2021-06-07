@@ -27,16 +27,18 @@ const Wrapper = styled.section`
   box-shadow: 0 8px 16px #0006;
   display: flex;
   gap: 10px;
-
   justify-items: end;
   max-width: 350px;
+  margin-bottom: 20px;
 
   img {
     justify-self: start;
-    max-width: 150px;
+    width: 150px;
   }
 
   h2 {
     font-size: 18px;
+    word-wrap: break-word;
+    width: 9em;
   }
 `

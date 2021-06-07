@@ -8,6 +8,8 @@ export default createGlobalStyle`
  body {
    margin: 0;
    font-family: sans-serif;
-   line-height: 1.4;
+   line-height: 1.2;
+   display: grid;
+   justify-content: center;
  }
 `
