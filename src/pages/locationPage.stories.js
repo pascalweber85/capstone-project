@@ -8,4 +8,6 @@ export default {
 const Template = args => <LocationPage {...args} />
 
 export const Default = Template.bind({})
-Default.args = {}
+Default.args = {
+  title: 'All Locations',
+}

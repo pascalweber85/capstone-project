@@ -30,6 +30,7 @@ const Wrapper = styled.section`
   justify-items: end;
   max-width: 350px;
   margin-bottom: 20px;
+  background-color: whitesmoke;
 
   img {
     justify-self: start;

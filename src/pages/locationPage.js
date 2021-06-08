@@ -2,14 +2,18 @@ import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
 import Card from '../components/Card'
 import location from '../data.json'
+import Header from '../components/Header'
 
 LocationPage.propTypes = {
-  onSubmit: PropTypes.func.isRequired,
+  title: PropTypes.string,
 }
 
-export default function LocationPage() {
+export default function LocationPage({ title }) {
   return (
     <Grid>
+      <Header>
+        <h2>Best Locations</h2>
+      </Header>
       <div>
         {location.map(location => {
           const { id, attributes } = location
@@ -29,8 +33,9 @@ export default function LocationPage() {
 }
 
 const Grid = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 20px;
+  padding: 10px;
 `
+// const h2 = styled.h2`
+//   padding: 10px;
+//   width: 100vw;
+// `

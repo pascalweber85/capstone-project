@@ -4,7 +4,7 @@ import LocationPage from './pages/LocationPage'
 export default function App() {
   return (
     <AppGrid>
-      <LocationPage />
+      <LocationPage title="lol" />
     </AppGrid>
   )
 }

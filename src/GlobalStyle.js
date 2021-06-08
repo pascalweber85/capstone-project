@@ -11,5 +11,6 @@ export default createGlobalStyle`
    line-height: 1.2;
    display: grid;
    justify-content: center;
+   
  }
 `
