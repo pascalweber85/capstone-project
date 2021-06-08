@@ -1,12 +1,10 @@
+import LocationPage from './LocationPage'
+export default {
+  title: 'LocationPage',
+  component: LocationPage,
+}
 
-  import locationPage from './locationPage'
-  export default {
-      title: 'locationPage',
-      component: locationPage
-  }
-    
-  const Template = args => <locationPage {...args} />
-    
-  export const Default = Template.bind({})
-  Default.args = {}
-        
+const Template = args => <LocationPage {...args} />
+
+export const Default = Template.bind({})
+Default.args = {}

@@ -1,21 +1,17 @@
-import location from './data.json'
-import Card from './components/Card'
+import styled from 'styled-components/macro'
+import LocationPage from './pages/LocationPage'
 
 export default function App() {
   return (
-    <div>
-      {location.map(location => {
-        const { id, attributes } = location
-        return (
-          <Card
-            key={id}
-            image={attributes.main_image_path}
-            title={attributes.title}
-            image2={attributes.rating_image_path}
-            text={attributes.text}
-          />
-        )
-      })}
-    </div>
+    <AppGrid>
+      <LocationPage />
+    </AppGrid>
   )
 }
+
+const AppGrid = styled.section`
+  display: grid;
+  grid-template-rows: auto min-content;
+  height: 100vh;
+  padding: 12px;
+`

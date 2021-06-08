@@ -1,11 +1,9 @@
+import { render, screen } from '@testing-library/react'
+import LocationPage from './LocationPage'
 
-  import {render, screen} from '@testing-library/react'
-  import locationPage from './locationPage'
-    
-  describe('locationPage', () => {
-      it('renders', () => {
-          render(<locationPage />)
-          expect(screen.getByText('locationPage')).toBeInTheDocument()
-      })
+describe('LocationPage', () => {
+  it('renders', () => {
+    render(<LocationPage />)
+    expect(screen.getByText('LocationPage')).toBeInTheDocument()
   })
-        
+})
