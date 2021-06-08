@@ -13,6 +13,6 @@ export const Default = Template.bind({})
 Default.args = {
   image: imageFile,
   title: 'Völkerschlachtdenkmal',
-  image2: imageFile2,
+  ratingimage: imageFile2,
   text: 'Sehenswürdigkeit',
 }

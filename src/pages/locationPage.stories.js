@@ -1,4 +1,5 @@
 import LocationPage from './LocationPage'
+
 export default {
   title: 'LocationPage',
   component: LocationPage,
