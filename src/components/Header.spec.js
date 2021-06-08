@@ -1,11 +1,10 @@
+import { render, screen } from '@testing-library/react'
+import Header from './Header'
 
-  import {render, screen} from '@testing-library/react'
-  import Header from './Header'
-    
-  describe('Header', () => {
-      it('renders', () => {
-          render(<Header />)
-          expect(screen.getByText('Header')).toBeInTheDocument()
-      })
+describe('Header', () => {
+  it('render a children', () => {
+    const { container } = render(<Header>Hello</Header>)
+    expect(container.firstChild).toHaveTextContent('Hello')
+    expect(screen.getByRole('heading')).toBeInTheDocument()
   })
-        
+})

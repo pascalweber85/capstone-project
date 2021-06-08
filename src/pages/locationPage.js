@@ -35,7 +35,3 @@ export default function LocationPage({ title }) {
 const Grid = styled.section`
   padding: 10px;
 `
-// const h2 = styled.h2`
-//   padding: 10px;
-//   width: 100vw;
-// `
