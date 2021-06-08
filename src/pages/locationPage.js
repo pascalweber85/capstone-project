@@ -18,7 +18,7 @@ export default function LocationPage() {
               key={id}
               image={attributes.main_image_path}
               title={attributes.title}
-              image2={attributes.rating_image_path}
+              ratingimage={attributes.rating_image_path}
               text={attributes.text}
             />
           )
