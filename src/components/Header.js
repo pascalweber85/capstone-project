@@ -23,6 +23,5 @@ const Heading = styled.h2`
   );
   padding: 20px;
   color: whitesmoke;
-  font-family: Arial, Helvetica, sans-serif;
   max-width: 600px;
 `

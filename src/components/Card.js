@@ -4,17 +4,17 @@ import PropTypes from 'prop-types'
 Card.propTypes = {
   image: PropTypes.node,
   title: PropTypes.string,
-  ratingimage: PropTypes.node,
+  ratingImage: PropTypes.node,
   text: PropTypes.string,
 }
 
-export default function Card({ image, title, ratingimage, text }) {
+export default function Card({ image, title, ratingImage, text }) {
   return (
     <Wrapper>
       <img src={image} alt="" />
       <div>
         <h2>{title}</h2>
-        <img src={ratingimage} alt="" />
+        <img src={ratingImage} alt="rated with 5 stars" />
         <p>{text}</p>
       </div>
     </Wrapper>
