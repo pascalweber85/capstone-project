@@ -9,7 +9,7 @@ export default function Header({ children }) {
   return <Heading>{children}</Heading>
 }
 
-const Heading = styled.h2`
+const Heading = styled.h1`
   display: flex;
   justify-content: space-around;
   text-align: center;

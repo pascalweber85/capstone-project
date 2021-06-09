@@ -18,9 +18,7 @@ LocationPage.propTypes = {
 export default function LocationPage() {
   return (
     <Wrapper>
-      <Header>
-        <h2>Best Locations</h2>
-      </Header>
+      <Header>Best Locations</Header>
       <div>
         {location.map(
           ({ id, main_image_path, rating_image_path, title, text }) => (
