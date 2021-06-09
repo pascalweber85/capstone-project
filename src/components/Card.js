@@ -27,7 +27,7 @@ const Wrapper = styled.section`
   box-shadow: 0 8px 16px #0006;
   display: flex;
   gap: 10px;
-  justify-items: end;
+  justify-content: center;
   max-width: 350px;
   margin-bottom: 20px;
   background-color: whitesmoke;
@@ -40,6 +40,6 @@ const Wrapper = styled.section`
   h2 {
     font-size: 18px;
     word-wrap: break-word;
-    width: 9em;
+    width: 16ch;
   }
 `

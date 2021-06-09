@@ -7,16 +7,14 @@ describe('Card', () => {
       <Card
         title="Völkerschlachtdenkmal"
         text="Lorem Ipsum"
-        image="path/to/image"
+        image="number of images per card"
         ratingImage="path/to/Image"
       />
     )
     expect(
       screen.getByRole('heading', { name: 'Völkerschlachtdenkmal' })
     ).toBeInTheDocument()
-  })
-  it('renders text of card', () => {
-    render(<Card text="heading" />)
-    expect(screen.getByRole('heading')).toBeInTheDocument()
+    const image = screen.getAllByRole('img')
+    expect(image).toHaveLength(2)
   })
 })
