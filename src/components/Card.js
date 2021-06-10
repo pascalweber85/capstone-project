@@ -6,12 +6,13 @@ Card.propTypes = {
   title: PropTypes.string,
   ratingImage: PropTypes.node,
   text: PropTypes.string,
+  onDetail: PropTypes.func,
 }
 
-export default function Card({ image, title, ratingImage, text }) {
+export default function Card({ image, title, ratingImage, text, onDetail }) {
   return (
     <Wrapper>
-      <img src={image} alt="" />
+      <img onClick={onDetail} src={image} alt="" />
       <div>
         <h2>{title}</h2>
         <img src={ratingImage} alt="rated with 5 stars" />

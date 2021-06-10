@@ -1,12 +1,28 @@
+import { useState } from 'react'
 import styled from 'styled-components/macro'
 import LocationPage from './pages/LocationPage'
+import DetailsPage from './pages/DetailsPage'
 
 export default function App() {
+  const [activePage, setActivePage] = useState('LocationPage')
+
   return (
     <AppGrid>
-      <LocationPage />
+      {activePage === 'LocationPage' && <LocationPage onDetail={showDetail} />}
+
+      {activePage === 'DetailsPage' && (
+        <DetailsPage onNavigate={handleClickBack} />
+      )}
     </AppGrid>
   )
+
+  function showDetail() {
+    setActivePage('DetailsPage')
+  }
+
+  function handleClickBack() {
+    setActivePage('LocationPage')
+  }
 }
 
 const AppGrid = styled.section`
