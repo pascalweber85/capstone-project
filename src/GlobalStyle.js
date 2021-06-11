@@ -7,10 +7,8 @@ export default createGlobalStyle`
 
  body {
    margin: 0;
-   font-family: sans-serif;
+   font-family: Arial, Helvetica, sans-serif;
    line-height: 1.2;
-   display: grid;
-   justify-content: center;
-   
+   background: darkgoldenrod;
  }
 `

@@ -11,8 +11,8 @@ Card.propTypes = {
 
 export default function Card({ image, title, ratingImage, text, onDetail }) {
   return (
-    <Wrapper>
-      <img onClick={onDetail} src={image} alt="" />
+    <Wrapper onClick={onDetail}>
+      <img src={image} alt="" />
       <div>
         <h2>{title}</h2>
         <img src={ratingImage} alt="rated with 5 stars" />
@@ -29,8 +29,9 @@ const Wrapper = styled.section`
   display: flex;
   gap: 10px;
   justify-content: center;
+  width: auto;
   max-width: 350px;
-  margin-bottom: 20px;
+  margin: 20px 12px;
   background-color: whitesmoke;
 
   img {

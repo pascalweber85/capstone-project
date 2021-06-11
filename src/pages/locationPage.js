@@ -10,26 +10,40 @@ LocationPage.propTypes = {
 
 export default function LocationPage({ onDetail }) {
   return (
-    <Wrapper>
+    <>
       <Header>Best Locations</Header>
-      <div>
-        {locations.map(
-          ({ id, main_image_path, title, rating_image_path, text }) => (
-            <Card
-              key={id}
-              image={main_image_path}
-              title={title}
-              ratingImage={rating_image_path}
-              text={text}
-              onDetail={onDetail}
-            />
-          )
-        )}
-      </div>
-    </Wrapper>
+      <Wrapper>
+        <div>
+          {locations.map(
+            ({
+              id,
+              main_image_path,
+              title,
+              rating_image_path,
+              text,
+              öffnungszeiten,
+              beschreibung,
+            }) => (
+              <Card
+                key={id}
+                image={main_image_path}
+                title={title}
+                ratingImage={rating_image_path}
+                text={text}
+                onDetail={() =>
+                  onDetail(title, main_image_path, öffnungszeiten, beschreibung)
+                }
+              />
+            )
+          )}
+        </div>
+      </Wrapper>
+    </>
   )
 }
 
 const Wrapper = styled.section`
-  padding: 10px;
+  display: grid;
+  justify-items: center;
+  max-width: 600px;
 `

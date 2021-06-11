@@ -10,9 +10,9 @@ export default function Header({ children }) {
 }
 
 const Heading = styled.h1`
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
+  display: grid;
+  place-items: center;
+  width: 100%;
   background: linear-gradient(
     90deg,
     rgb(238, 171, 48),
@@ -23,5 +23,4 @@ const Heading = styled.h1`
   );
   padding: 20px;
   color: whitesmoke;
-  max-width: 600px;
 `
