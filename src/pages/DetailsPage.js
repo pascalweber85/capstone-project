@@ -42,11 +42,12 @@ const Wrapper = styled.section`
   display: grid;
   justify-items: center;
   max-width: 600px;
-  background-color: white;
+
   padding: 10px;
 
   img {
     width: 350px;
+    border: 2px solid white;
     border-radius: 10px;
   }
 `
