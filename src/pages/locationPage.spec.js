@@ -19,7 +19,7 @@ describe('LocationPage', () => {
     )
 
     const title = screen.getAllByRole('heading')
-    expect(title).toHaveLength(21)
+    expect(title).toHaveLength(20)
     const image = screen.getAllByRole('img')
     expect(image).toHaveLength(38)
   })
