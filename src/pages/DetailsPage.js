@@ -28,9 +28,9 @@ export default function DetailsPage({
         <h2>{title}</h2>
         <img src={image} alt="" />
         <h3>Öffnungszeiten:</h3>
-        <ul>
-          <li>{öffnungszeiten}</li>
-        </ul>
+
+        <p>{öffnungszeiten}</p>
+
         <h3>Beschreibung:</h3>
         <p>{beschreibung}</p>
       </Wrapper>
