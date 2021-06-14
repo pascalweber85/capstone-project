@@ -13,14 +13,8 @@ const Heading = styled.h1`
   display: grid;
   place-items: center;
   width: 100%;
-  background: linear-gradient(
-    90deg,
-    rgb(238, 171, 48),
-    orange,
-    rgba(255, 81, 0, 0.719),
-    orange,
-    rgb(241, 165, 23)
-  );
+  background: linear-gradient(0deg, #483939, #9f1414);
   padding: 20px;
   color: whitesmoke;
+  border: whitesmoke solid 1px;
 `

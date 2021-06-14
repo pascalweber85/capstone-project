@@ -21,7 +21,7 @@ export default function DetailsPage({
   return (
     <>
       <div>
-        <Button onClick={onNavigate}>&lt; back</Button>
+        <BackButton onClick={onNavigate}>&lt; back</BackButton>
       </div>
       <Header>Details</Header>
       <Wrapper>
@@ -43,10 +43,16 @@ const Wrapper = styled.section`
   justify-items: center;
   max-width: 600px;
   padding: 10px;
+  color: whitesmoke;
 
   img {
     width: 350px;
     border: 2px solid white;
     border-radius: 10px;
   }
+`
+const BackButton = styled(Button)`
+  position: absolute;
+  left: 2em;
+  top: 3em;
 `

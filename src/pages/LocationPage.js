@@ -13,30 +13,28 @@ export default function LocationPage({ onDetail }) {
     <>
       <Header>Best Locations</Header>
       <Wrapper>
-        <div>
-          {locations.map(
-            ({
-              id,
-              main_image_path,
-              title,
-              rating_image_path,
-              text,
-              öffnungszeiten,
-              beschreibung,
-            }) => (
-              <Card
-                key={id}
-                image={main_image_path}
-                title={title}
-                ratingImage={rating_image_path}
-                text={text}
-                onDetail={() =>
-                  onDetail(title, main_image_path, öffnungszeiten, beschreibung)
-                }
-              />
-            )
-          )}
-        </div>
+        {locations.map(
+          ({
+            id,
+            main_image_path,
+            title,
+            rating_image_path,
+            text,
+            öffnungszeiten,
+            beschreibung,
+          }) => (
+            <Card
+              key={id}
+              image={main_image_path}
+              title={title}
+              ratingImage={rating_image_path}
+              text={text}
+              onDetail={() =>
+                onDetail(title, main_image_path, öffnungszeiten, beschreibung)
+              }
+            />
+          )
+        )}
       </Wrapper>
     </>
   )
