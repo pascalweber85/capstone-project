@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "title": "Völkerschlacht Denkmal",
+    "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
+    "text": "Sehenswürdigkeit",
+    "main_image_path": "https://images.unsplash.com/photo-1583602690006-31db03a8b86f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGxlaXB6aWd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60"
+  },
+  {
+    "id": 2,
+    "title": "Zoo Leipzig",
+    "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
+    "text": "Freizeit",
+    "main_image_path": "https://images.unsplash.com/photo-1583603082237-ec17496f233f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGxlaXB6aWclMjB6b298ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60"
+  },
+  {
+    "id": 3,
+    "title": "Altes Rathaus",
+    "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
+    "text": "Sehenswürdigkeit",
+    "main_image_path": "https://images.unsplash.com/photo-1616001029681-ff04e6bfc6c9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGVpcHppZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60"
+  },
+  {
+    "id": 4,
+    "title": "Alte Damenhandschuhfabrik",
+    "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
+    "text": "Club, Disco",
+    "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/WQFxvDYi-Rr3_UiBeRImlg/o.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Auerbachs Keller",
+    "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
+    "text": "Restaurant, Bar",
+    "main_image_path": "https://images.unsplash.com/photo-1619434863454-356cc340148f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGxlaXB6aWd8ZW58MHx8MHx8&auto=format&fit=crop&w=300&q=60"
+  },
+  {
+    "id": 6,
+    "title": "Bayerischer Bahnhof",
+    "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
+    "text": "€€, Deutsch, Biergarten, Bayerische Küche",
+    "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/L8J2MV8Yex86h739GWtsWw/348s.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Café Madrid",
+    "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
+    "text": "€€€, Spanisch, Café, Tapas",
+    "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/uO6ER8_cMgDNH0FAlMWo7g/348s.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Bagel Brothers",
+    "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
+    "text": "€€, Bagels, Desserts, Coffee Shop",
+    "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/VkUmxfJTc3ogJa9x6za0vA/348s.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Sakura",
+    "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
+    "text": "€€, Sushi, Buffet",
+    "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/Gd7Q7cvdxsVLARQo45AIOQ/348s.jpg"
+  },
+  {
+    "id": 10,
+    "title": "City-Hochhaus",
+    "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
+    "text": "Sehenswürdigkeiten",
+    "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/b5Nk3v_LgBB-PqmChrhthg/348s.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Rizzi",
+    "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
+    "text": "€€, Italienisch, Pizza",
+    "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/Wn5ZjzuYmg6DDyhXLIto1w/348s.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Imperii",
+    "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
+    "text": "€€€, Lounge, Modern-Europäisch, Deutsch",
+    "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/UX2slOH-xNkCfKeYv8a48w/348s.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Maître",
+    "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
+    "text": "€€, Café, Konditorei",
+    "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/9fOgkl5v_qHbKpCRwsC5CA/348s.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Stadthafen Leipzig",
+    "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
+    "text": "Bootsverleih, Beachvolleyball, Imbiss",
+    "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/dsDG5NmcXEYw_dZ99pz3SQ/348s.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Wildpark",
+    "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
+    "text": "Zoo",
+    "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/4bGFs_47_vsvLk1DTRdLyA/348s.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Cospudener See",
+    "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
+    "text": "See, Amateursport, Hundepark",
+    "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/5R75-LtdTVWtM0GJtq6LHw/348s.jpg"
+  },
+  {
+    "id": 18,
+    "title": "Club L1",
+    "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
+    "text": "€€, Club & Disco",
+    "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/VIN-2dtOJfbU5I7w7ttO_A/348s.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Staubsauger",
+    "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
+    "text": "€€, Bar, Club & Disco",
+    "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/ZCYVNjebC-prXTedu3O3Mg/348s.jpg"
+  },
+  {
+    "id": 20,
+    "title": "DarkFlower",
+    "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
+    "text": "€€€€, Club & Disco",
+    "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/bow4ZZU5X0Y6Fj4fsMuAYA/348s.jpg"
+  }
+]

@@ -1,23 +1,17 @@
-import logo from "./logo.svg";
-import "./App.css";
+import styled from 'styled-components/macro'
+import LocationPage from './pages/LocationPage'
 
 export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <AppGrid>
+      <LocationPage />
+    </AppGrid>
+  )
 }
+
+const AppGrid = styled.section`
+  display: grid;
+  grid-template-rows: auto min-content;
+  height: 100vh;
+  padding: 12px;
+`
