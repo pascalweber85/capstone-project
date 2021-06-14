@@ -42,7 +42,6 @@ const Wrapper = styled.section`
   display: grid;
   justify-items: center;
   max-width: 600px;
-
   padding: 10px;
 
   img {
