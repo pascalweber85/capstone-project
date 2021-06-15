@@ -7,7 +7,7 @@ import data from './data.json'
 export default function App() {
   const [activePage, setActivePage] = useState('LocationPage')
   const [details, setDetails] = useState(null)
-  const [locations, setLocations] = useState(data)
+  const [locations] = useState(data)
 
   return (
     <AppGrid>

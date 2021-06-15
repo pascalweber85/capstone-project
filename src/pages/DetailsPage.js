@@ -45,6 +45,9 @@ const Wrapper = styled.section`
     border: 2px solid white;
     border-radius: 10px;
   }
+  li {
+    list-style-type: none;
+  }
 `
 const BackButton = styled(Button)`
   position: absolute;
