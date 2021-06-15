@@ -2,30 +2,30 @@ import { useState } from 'react'
 import styled from 'styled-components/macro'
 import LocationPage from './pages/LocationPage'
 import DetailsPage from './pages/DetailsPage'
+import data from './data.json'
 
 export default function App() {
   const [activePage, setActivePage] = useState('LocationPage')
-  const [detailPage, setDetailPage] = useState(null)
+  const [details, setDetails] = useState(null)
+  const [locations, setLocations] = useState(data)
 
   return (
     <AppGrid>
-      {activePage === 'LocationPage' && <LocationPage onDetail={showDetail} />}
+      {activePage === 'LocationPage' && (
+        <LocationPage onDetail={showDetail} locations={locations} />
+      )}
 
       {activePage === 'DetailsPage' && (
-        <DetailsPage
-          onNavigate={handleClickBack}
-          title={detailPage.title}
-          image={detailPage.image}
-          öffnungszeiten={detailPage.öffnungszeiten}
-          beschreibung={detailPage.beschreibung}
-        />
+        <DetailsPage onNavigate={handleClickBack} details={details} />
       )}
     </AppGrid>
   )
 
-  function showDetail(title, image, öffnungszeiten, beschreibung) {
+  function showDetail(id) {
+    const newdetails = locations.find(location => location.id === id)
+
     setActivePage('DetailsPage')
-    setDetailPage({ title, image, öffnungszeiten, beschreibung })
+    setDetails(newdetails)
   }
 
   function handleClickBack() {

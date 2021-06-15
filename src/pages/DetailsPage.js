@@ -5,18 +5,11 @@ import Header from './../components/Header'
 
 DetailsPage.propTypes = {
   onNavigate: PropTypes.func.isRequired,
-  title: PropTypes.string,
-  image: PropTypes.node,
-  öffnungszeiten: PropTypes.string,
-  beschreibung: PropTypes.string,
 }
 
 export default function DetailsPage({
   onNavigate,
-  title,
-  image,
-  öffnungszeiten,
-  beschreibung,
+  details: { title, main_image_path, öffnungszeiten, beschreibung },
 }) {
   return (
     <>
@@ -26,11 +19,13 @@ export default function DetailsPage({
       <Header>Details</Header>
       <Wrapper>
         <h2>{title}</h2>
-        <img src={image} alt="" />
+        <img src={main_image_path} alt="" />
         <h3>Öffnungszeiten:</h3>
-
-        <p>{öffnungszeiten}</p>
-
+        <ul>
+          {öffnungszeiten.map(öffnungszeit => (
+            <li>{öffnungszeit}</li>
+          ))}
+        </ul>
         <h3>Beschreibung:</h3>
         <p>{beschreibung}</p>
       </Wrapper>
