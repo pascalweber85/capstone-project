@@ -2,12 +2,13 @@ import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
 import Card from '../components/Card'
 import Header from '../components/Header'
+import FavButton from '../components/FavButton'
 
 LocationPage.propTypes = {
   onDetail: PropTypes.func.isRequired,
 }
 
-export default function LocationPage({ onDetail, locations }) {
+export default function LocationPage({ onDetail, locations, toFavorite }) {
   return (
     <>
       <Header>Best Locations</Header>
@@ -24,6 +25,7 @@ export default function LocationPage({ onDetail, locations }) {
             />
           )
         )}
+        <FavButton onClick={toFavorite}>Favoriten</FavButton>
       </Wrapper>
     </>
   )

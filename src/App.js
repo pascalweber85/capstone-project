@@ -13,7 +13,11 @@ export default function App() {
   return (
     <AppGrid>
       {activePage === 'LocationPage' && (
-        <LocationPage onDetail={showDetail} locations={locations} />
+        <LocationPage
+          onDetail={showDetail}
+          locations={locations}
+          toFavorite={toFavorite}
+        />
       )}
 
       {activePage === 'DetailsPage' && (
@@ -42,6 +46,10 @@ export default function App() {
   }
 
   function saveAsFavorite() {
+    setActivePage('FavoritePage')
+  }
+
+  function toFavorite() {
     setActivePage('FavoritePage')
   }
 }
