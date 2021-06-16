@@ -11,7 +11,7 @@ const Template = args => <LocationPage {...args} />
 
 export const listedLocations = Template.bind({})
 listedLocations.args = {
-  Locations: [
+  locations: [
     {
       main_image_path: picture,
       rating_image_path: stars,
