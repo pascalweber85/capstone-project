@@ -2,6 +2,7 @@ import { useState } from 'react'
 import styled from 'styled-components/macro'
 import LocationPage from './pages/LocationPage'
 import DetailsPage from './pages/DetailsPage'
+import FavoritePage from './pages/FavoritePage'
 import data from './data.json'
 
 export default function App() {
@@ -16,7 +17,15 @@ export default function App() {
       )}
 
       {activePage === 'DetailsPage' && (
-        <DetailsPage onNavigate={handleClickBack} details={details} />
+        <DetailsPage
+          onNavigate={handleClickBack}
+          saveAsFavorite={saveAsFavorite}
+          details={details}
+        />
+      )}
+
+      {activePage === 'FavoritePage' && (
+        <FavoritePage onNavigate={handleClickBack} />
       )}
     </AppGrid>
   )
@@ -30,6 +39,10 @@ export default function App() {
 
   function handleClickBack() {
     setActivePage('LocationPage')
+  }
+
+  function saveAsFavorite() {
+    setActivePage('FavoritePage')
   }
 }
 

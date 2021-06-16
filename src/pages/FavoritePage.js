@@ -7,28 +7,14 @@ FavoritePage.propTypes = {
   onNavigate: PropTypes.func.isRequired,
 }
 
-export default function FavoritePage({
-  onNavigate,
-  details: { title, main_image_path, öffnungszeiten, beschreibung },
-}) {
+export default function FavoritePage({ onNavigate }) {
   return (
     <>
       <div>
         <BackButton onClick={onNavigate}>&lt; back</BackButton>
       </div>
-      <Header>Details</Header>
-      <Wrapper>
-        <h2>{title}</h2>
-        <img src={main_image_path} alt="" />
-        <h3>Öffnungszeiten:</h3>
-        <ul>
-          {öffnungszeiten.map(öffnungszeit => (
-            <li>{öffnungszeit}</li>
-          ))}
-        </ul>
-        <h3>Beschreibung:</h3>
-        <p>{beschreibung}</p>
-      </Wrapper>
+      <Header>Favorites</Header>
+      <Wrapper></Wrapper>
     </>
   )
 }
@@ -39,15 +25,6 @@ const Wrapper = styled.section`
   max-width: 600px;
   padding: 10px;
   color: whitesmoke;
-
-  img {
-    width: 350px;
-    border: 2px solid white;
-    border-radius: 10px;
-  }
-  li {
-    list-style-type: none;
-  }
 `
 const BackButton = styled(Button)`
   position: absolute;

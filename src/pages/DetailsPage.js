@@ -10,6 +10,7 @@ DetailsPage.propTypes = {
 
 export default function DetailsPage({
   onNavigate,
+  saveAsFavorite,
   details: { title, main_image_path, öffnungszeiten, beschreibung },
 }) {
   return (
@@ -29,7 +30,7 @@ export default function DetailsPage({
         </ul>
         <h3>Beschreibung:</h3>
         <p>{beschreibung}</p>
-        <FavButton>als Favorite speichern</FavButton>
+        <FavButton onClick={saveAsFavorite}>als Favorite speichern</FavButton>
       </Wrapper>
     </>
   )
