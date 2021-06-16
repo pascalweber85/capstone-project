@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components/macro'
 import Button from './../components/Button'
+import FavButton from './../components/FavButton'
 import Header from './../components/Header'
 
 DetailsPage.propTypes = {
@@ -28,6 +29,7 @@ export default function DetailsPage({
         </ul>
         <h3>Beschreibung:</h3>
         <p>{beschreibung}</p>
+        <FavButton>als Favorite speichern</FavButton>
       </Wrapper>
     </>
   )

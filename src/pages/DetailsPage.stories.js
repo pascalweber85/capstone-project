@@ -1,4 +1,5 @@
 import DetailsPage from './DetailsPage'
+
 export default {
   title: 'DetailsPage',
   component: DetailsPage,

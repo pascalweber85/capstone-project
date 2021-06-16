@@ -7,4 +7,7 @@ export default {
 const Template = args => <FavoritePage {...args} />
 
 export const Default = Template.bind({})
-Default.args = {}
+Default.args = {
+  title: 'Völkerschlachtdenkmal',
+  text: 'Sehenswürdigkeit',
+}
