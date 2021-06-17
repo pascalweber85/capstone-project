@@ -1,5 +1,6 @@
 import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
+import Bookmark from './../components/Bookmark'
 
 Card.propTypes = {
   image: PropTypes.node,
@@ -11,14 +12,17 @@ Card.propTypes = {
 
 export default function Card({ image, title, ratingImage, text, onDetail }) {
   return (
-    <Wrapper onClick={onDetail}>
-      <img src={image} alt="" />
-      <div>
-        <h2>{title}</h2>
-        <img src={ratingImage} alt="rated with 5 stars" />
-        <p>{text}</p>
-      </div>
-    </Wrapper>
+    <>
+      <Bookmark />
+      <Wrapper onClick={onDetail}>
+        <img src={image} alt="" />
+        <div>
+          <h2>{title}</h2>
+          <img src={ratingImage} alt="rated with 5 stars" />
+          <p>{text}</p>
+        </div>
+      </Wrapper>
+    </>
   )
 }
 
@@ -31,7 +35,7 @@ const Wrapper = styled.section`
   justify-content: center;
   width: auto;
   max-width: 350px;
-  margin: 20px 12px;
+  margin: 0px 12px;
   background-color: whitesmoke;
 
   img {
