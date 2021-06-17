@@ -11,11 +11,11 @@ Bookmark.propTypes = {
 }
 
 export default function Bookmark(props) {
-  const [isBookmarked, setIsBookmarked] = useState(false)
+  const [isBookmarked, setIsBookmarked] = useState(true)
   return (
     <BookmarkStyled {...props}>
       <img
-        src={isBookmarked ? bma : bmi}
+        src={isBookmarked ? bmi : bma}
         alt=""
         onClick={() => setIsBookmarked(!isBookmarked)}
       />
