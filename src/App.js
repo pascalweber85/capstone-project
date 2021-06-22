@@ -1,3 +1,4 @@
+//@ts-check
 import { useState } from 'react'
 import styled from 'styled-components/macro'
 import LocationPage from './pages/LocationPage'
@@ -9,6 +10,7 @@ export default function App() {
   const [activePage, setActivePage] = useState('LocationPage')
   const [details, setDetails] = useState(null)
   const [locations] = useState(data)
+  const [bookmarkedIds, setBookmarkedIds] = useState([])
 
   return (
     <AppGrid>
@@ -17,6 +19,7 @@ export default function App() {
           onDetail={showDetail}
           locations={locations}
           toFavorite={toFavorite}
+          handleBookmark={handleBookmark}
         />
       )}
 
@@ -29,7 +32,11 @@ export default function App() {
       )}
 
       {activePage === 'FavoritePage' && (
-        <FavoritePage onNavigate={handleClickBack} />
+        <FavoritePage
+          onNavigate={handleClickBack}
+          locations={locations}
+          bookmarkedIds={bookmarkedIds}
+        />
       )}
     </AppGrid>
   )
@@ -51,6 +58,14 @@ export default function App() {
 
   function toFavorite() {
     setActivePage('FavoritePage')
+  }
+
+  function handleBookmark(id) {
+    if (bookmarkedIds.some(favId => favId === id)) {
+      setBookmarkedIds(bookmarkedIds.filter(favId => favId !== id))
+    } else {
+      setBookmarkedIds([...bookmarkedIds, id])
+    }
   }
 }
 

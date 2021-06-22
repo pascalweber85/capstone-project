@@ -1,3 +1,4 @@
+//@ts-check
 import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
 import Card from '../components/Card'
@@ -8,7 +9,12 @@ LocationPage.propTypes = {
   onDetail: PropTypes.func.isRequired,
 }
 
-export default function LocationPage({ onDetail, locations, toFavorite }) {
+export default function LocationPage({
+  onDetail,
+  locations,
+  handleBookmark,
+  toFavorite,
+}) {
   return (
     <>
       <Header>Best Locations</Header>
@@ -17,10 +23,12 @@ export default function LocationPage({ onDetail, locations, toFavorite }) {
           ({ id, main_image_path, title, rating_image_path, text }) => (
             <Card
               key={id}
+              id={id}
               image={main_image_path}
               title={title}
               ratingImage={rating_image_path}
               text={text}
+              handleBookmark={handleBookmark}
               onDetail={() => onDetail(id)}
             />
           )
