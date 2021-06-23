@@ -19,10 +19,12 @@ export default function Card({
   text,
   onDetail,
   handleBookmark,
+  isBookmarked,
 }) {
   return (
     <>
       <Bookmark
+        isBookmarked={isBookmarked}
         aria-label="Add location to favorites"
         onClick={() => handleBookmark(id)}
       />

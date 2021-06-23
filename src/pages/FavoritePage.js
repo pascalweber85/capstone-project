@@ -9,7 +9,12 @@ FavoritePage.propTypes = {
   handleBookmark: PropTypes.func,
 }
 
-export default function FavoritePage({ onNavigate, bookmarkedIds, locations }) {
+export default function FavoritePage({
+  onNavigate,
+  bookmarkedIds,
+  locations,
+  handleBookmark,
+}) {
   const favoriteLocations = locations.filter(location =>
     bookmarkedIds.find(id => id === location.id)
   )
@@ -29,6 +34,7 @@ export default function FavoritePage({ onNavigate, bookmarkedIds, locations }) {
               title={title}
               ratingImage={rating_image_path}
               text={text}
+              handleBookmark={handleBookmark}
             />
           )
         )}

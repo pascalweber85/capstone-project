@@ -36,6 +36,7 @@ export default function App() {
           onNavigate={handleClickBack}
           locations={locations}
           bookmarkedIds={bookmarkedIds}
+          handleBookmark={handleBookmark}
         />
       )}
     </AppGrid>
