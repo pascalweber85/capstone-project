@@ -27,20 +27,22 @@ export default function FavoritePage({
       </div>
       <Header>Favorites</Header>
       <Wrapper>
-        {favoriteLocations.map(
-          ({ id, main_image_path, title, rating_image_path, text }) => (
-            <Card
-              key={id}
-              id={id}
-              image={main_image_path}
-              title={title}
-              ratingImage={rating_image_path}
-              text={text}
-              handleBookmark={handleBookmark}
-              isBookmarked={true}
-            />
-          )
-        )}
+        {favoriteLocations.length > 0
+          ? favoriteLocations.map(
+              ({ id, main_image_path, title, rating_image_path, text }) => (
+                <Card
+                  key={id}
+                  id={id}
+                  image={main_image_path}
+                  title={title}
+                  ratingImage={rating_image_path}
+                  text={text}
+                  handleBookmark={handleBookmark}
+                  isBookmarked={true}
+                />
+              )
+            )
+          : 'Du hast noch keine Location ausgewählt!'}
       </Wrapper>
     </>
   )
