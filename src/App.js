@@ -10,12 +10,14 @@ import data from './data.json'
 export default function App() {
   const [activePage, setActivePage] = useState('LocationPage')
   const [details, setDetails] = useState(null)
-  const [locations] = useState(loadFromLocal('locations') ?? data)
-  const [bookmarkedIds, setBookmarkedIds] = useState([])
+  const [locations] = useState(data)
+  const [bookmarkedIds, setBookmarkedIds] = useState(
+    loadFromLocal('bookmarkedIds') ?? []
+  )
 
   useEffect(() => {
-    saveToLocal('locations', locations)
-  }, [locations])
+    saveToLocal('bookmarkedIds', bookmarkedIds)
+  }, [bookmarkedIds])
 
   return (
     <AppGrid>

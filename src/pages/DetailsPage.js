@@ -6,6 +6,13 @@ import Header from './../components/Header'
 
 DetailsPage.propTypes = {
   onNavigate: PropTypes.func.isRequired,
+  saveAsFavorite: PropTypes.func.isRequired,
+  details: PropTypes.shape({
+    title: PropTypes.string,
+    main_image_path: PropTypes.string,
+    öffnungszeiten: PropTypes.array,
+    beschreibung: PropTypes.string,
+  }),
 }
 
 export default function DetailsPage({

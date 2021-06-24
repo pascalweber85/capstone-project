@@ -6,6 +6,8 @@ import Card from './../components/Card'
 
 FavoritePage.propTypes = {
   onNavigate: PropTypes.func.isRequired,
+  bookmarkedIds: PropTypes.any,
+  location: PropTypes.array,
   handleBookmark: PropTypes.func,
 }
 
