@@ -14,8 +14,8 @@ export default function LocationPage({
   locations,
   handleBookmark,
   toFavorite,
+  bookmarkedIds,
 }) {
-  const isBookmarked = locations.find(location => location.id) && true
   return (
     <>
       <Header>Best Locations</Header>
@@ -29,7 +29,7 @@ export default function LocationPage({
               title={title}
               ratingImage={rating_image_path}
               text={text}
-              isBookmarked={isBookmarked}
+              isBookmarked={bookmarkedIds.includes(id)}
               handleBookmark={handleBookmark}
               onDetail={() => onDetail(id)}
             />

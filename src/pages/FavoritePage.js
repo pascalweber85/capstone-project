@@ -16,7 +16,7 @@ export default function FavoritePage({
   handleBookmark,
 }) {
   const favoriteLocations = locations.filter(location =>
-    bookmarkedIds.find(id => id === location.id)
+    bookmarkedIds.includes(location.id)
   )
   return (
     <>
@@ -35,6 +35,7 @@ export default function FavoritePage({
               ratingImage={rating_image_path}
               text={text}
               handleBookmark={handleBookmark}
+              isBookmarked={true}
             />
           )
         )}

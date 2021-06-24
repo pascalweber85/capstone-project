@@ -1,5 +1,6 @@
 //@ts-check
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { loadFromLocal, saveToLocal } from './utils/localStorage'
 import styled from 'styled-components/macro'
 import LocationPage from './pages/LocationPage'
 import DetailsPage from './pages/DetailsPage'
@@ -9,14 +10,19 @@ import data from './data.json'
 export default function App() {
   const [activePage, setActivePage] = useState('LocationPage')
   const [details, setDetails] = useState(null)
-  const [locations] = useState(data)
+  const [locations] = useState(loadFromLocal('locations') ?? data)
   const [bookmarkedIds, setBookmarkedIds] = useState([])
+
+  useEffect(() => {
+    saveToLocal('locations', locations)
+  }, [locations])
 
   return (
     <AppGrid>
       {activePage === 'LocationPage' && (
         <LocationPage
           onDetail={showDetail}
+          bookmarkedIds={bookmarkedIds}
           locations={locations}
           toFavorite={toFavorite}
           handleBookmark={handleBookmark}
