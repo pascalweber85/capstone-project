@@ -30,6 +30,7 @@ export default function DetailsPage({
       </div>
       <Header>Details</Header>
       <Wrapper>
+        <FavButton onClick={toFavorite}>gehe zu den Favorite</FavButton>
         <h2>{title}</h2>
         <img src={main_image_path} alt="" />
         <h3>Öffnungszeiten:</h3>
@@ -40,7 +41,6 @@ export default function DetailsPage({
         </ul>
         <h3>Beschreibung:</h3>
         <p>{beschreibung}</p>
-        <FavButton onClick={toFavorite}>als Favorite speichern</FavButton>
       </Wrapper>
     </>
   )

@@ -5,6 +5,7 @@ import Header from './../components/Header'
 import Card from './../components/Card'
 
 FavoritePage.propTypes = {
+  onDetail: PropTypes.func.isRequired,
   onNavigate: PropTypes.func,
   bookmarkedIds: PropTypes.any,
   location: PropTypes.array,
@@ -12,6 +13,7 @@ FavoritePage.propTypes = {
 }
 
 export default function FavoritePage({
+  onDetail,
   onNavigate,
   bookmarkedIds,
   locations,
@@ -39,6 +41,7 @@ export default function FavoritePage({
                   text={text}
                   handleBookmark={handleBookmark}
                   isBookmarked={true}
+                  onDetail={() => onDetail(id)}
                 />
               )
             )

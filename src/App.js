@@ -43,6 +43,7 @@ export default function App() {
         </Route>
         <Route path="/FavoritePage">
           <FavoritePage
+            onDetail={showDetail}
             onNavigate={handleClickBack}
             locations={locations}
             bookmarkedIds={bookmarkedIds}
