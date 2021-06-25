@@ -33,11 +33,12 @@ export default function App() {
             handleBookmark={handleBookmark}
           />
         </Route>
-        <Route path="/DetailsPage">
+        <Route path="/DetailsPage/:id">
           <DetailsPage
             onNavigate={handleClickBack}
             toFavorite={toFavorite}
             details={details}
+            // handleDetails={handleDetails}
           />
         </Route>
         <Route path="/FavoritePage">
@@ -54,7 +55,7 @@ export default function App() {
 
   function showDetail(id) {
     setDetailsId(id)
-    push('/DetailsPage')
+    push('/DetailsPage/' + id)
   }
 
   function handleClickBack() {
@@ -64,6 +65,10 @@ export default function App() {
   function toFavorite() {
     push('/FavoritePage')
   }
+
+  // function handleDetails(id) {
+  //   setDetailsId(id)
+  // }
 
   function handleBookmark(id) {
     if (bookmarkedIds.some(bookmarkedId => bookmarkedId === id)) {

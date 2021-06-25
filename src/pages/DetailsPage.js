@@ -3,6 +3,7 @@ import styled from 'styled-components/macro'
 import Button from './../components/Button'
 import FavButton from './../components/FavButton'
 import Header from './../components/Header'
+// import { useParams } from 'react-router'
 
 DetailsPage.propTypes = {
   onNavigate: PropTypes.func,
@@ -15,10 +16,13 @@ DetailsPage.propTypes = {
   }),
 }
 export default function DetailsPage({
+  handleDetails,
   onNavigate,
   toFavorite,
   details: { title, main_image_path, öffnungszeiten, beschreibung },
 }) {
+  // const { id } = useParams()
+  // handleDetails(id)
   return (
     <>
       <div>
