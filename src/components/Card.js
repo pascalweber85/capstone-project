@@ -1,5 +1,6 @@
 import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
+import Bookmark from './../components/Bookmark'
 
 Card.propTypes = {
   image: PropTypes.node,
@@ -7,18 +8,36 @@ Card.propTypes = {
   ratingImage: PropTypes.node,
   text: PropTypes.string,
   onDetail: PropTypes.func,
+  handleBookmark: PropTypes.func,
+  isBookmarked: PropTypes.bool,
 }
 
-export default function Card({ image, title, ratingImage, text, onDetail }) {
+export default function Card({
+  id,
+  image,
+  title,
+  ratingImage,
+  text,
+  onDetail,
+  handleBookmark,
+  isBookmarked,
+}) {
   return (
-    <Wrapper onClick={onDetail}>
-      <img src={image} alt="" />
-      <div>
-        <h2>{title}</h2>
-        <img src={ratingImage} alt="rated with 5 stars" />
-        <p>{text}</p>
-      </div>
-    </Wrapper>
+    <>
+      <Bookmark
+        isBookmarked={isBookmarked}
+        aria-label="Add location to favorites"
+        onClick={() => handleBookmark(id)}
+      />
+      <Wrapper onClick={onDetail}>
+        <img src={image} alt="" />
+        <div>
+          <h2>{title}</h2>
+          <img src={ratingImage} alt="rated with 5 stars" />
+          <p>{text}</p>
+        </div>
+      </Wrapper>
+    </>
   )
 }
 
@@ -31,7 +50,8 @@ const Wrapper = styled.section`
   justify-content: center;
   width: auto;
   max-width: 350px;
-  margin: 20px 12px;
+  margin: 0px 12px;
+  color: black;
   background-color: whitesmoke;
 
   img {

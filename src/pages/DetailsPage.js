@@ -1,14 +1,23 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components/macro'
 import Button from './../components/Button'
+import FavButton from './../components/FavButton'
 import Header from './../components/Header'
 
 DetailsPage.propTypes = {
-  onNavigate: PropTypes.func.isRequired,
+  onNavigate: PropTypes.func,
+  toFavorite: PropTypes.func,
+  details: PropTypes.shape({
+    title: PropTypes.string,
+    main_image_path: PropTypes.string,
+    öffnungszeiten: PropTypes.array,
+    beschreibung: PropTypes.string,
+  }),
 }
 
 export default function DetailsPage({
   onNavigate,
+  toFavorite,
   details: { title, main_image_path, öffnungszeiten, beschreibung },
 }) {
   return (
@@ -23,11 +32,12 @@ export default function DetailsPage({
         <h3>Öffnungszeiten:</h3>
         <ul>
           {öffnungszeiten.map(öffnungszeit => (
-            <li>{öffnungszeit}</li>
+            <li key={öffnungszeit}>{öffnungszeit}</li>
           ))}
         </ul>
         <h3>Beschreibung:</h3>
         <p>{beschreibung}</p>
+        <FavButton onClick={toFavorite}>als Favorite speichern</FavButton>
       </Wrapper>
     </>
   )
