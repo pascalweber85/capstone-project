@@ -14,7 +14,6 @@ DetailsPage.propTypes = {
     beschreibung: PropTypes.string,
   }),
 }
-
 export default function DetailsPage({
   onNavigate,
   toFavorite,
