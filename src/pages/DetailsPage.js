@@ -6,7 +6,7 @@ import Header from './../components/Header'
 
 DetailsPage.propTypes = {
   onNavigate: PropTypes.func.isRequired,
-  saveAsFavorite: PropTypes.func.isRequired,
+  toFavorite: PropTypes.func.isRequired,
   details: PropTypes.shape({
     title: PropTypes.string,
     main_image_path: PropTypes.string,
@@ -17,7 +17,7 @@ DetailsPage.propTypes = {
 
 export default function DetailsPage({
   onNavigate,
-  saveAsFavorite,
+  toFavorite,
   details: { title, main_image_path, öffnungszeiten, beschreibung },
 }) {
   return (
@@ -32,12 +32,12 @@ export default function DetailsPage({
         <h3>Öffnungszeiten:</h3>
         <ul>
           {öffnungszeiten.map(öffnungszeit => (
-            <li>{öffnungszeit}</li>
+            <li key={öffnungszeit}>{öffnungszeit}</li>
           ))}
         </ul>
         <h3>Beschreibung:</h3>
         <p>{beschreibung}</p>
-        <FavButton onClick={saveAsFavorite}>als Favorite speichern</FavButton>
+        <FavButton onClick={toFavorite}>als Favorite speichern</FavButton>
       </Wrapper>
     </>
   )

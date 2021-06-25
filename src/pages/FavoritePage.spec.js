@@ -8,6 +8,6 @@ describe('FavoritePage', () => {
     const title = screen.getAllByRole('heading')
     expect(title).toHaveLength(4)
     const image = screen.getAllByRole('img')
-    expect(image).toHaveLength(1)
+    expect(image).toBeInTheDocument()
   })
 })

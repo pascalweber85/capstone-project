@@ -1,4 +1,3 @@
-//@ts-check
 import { useState, useEffect } from 'react'
 import { loadFromLocal, saveToLocal } from './utils/localStorage'
 import styled from 'styled-components/macro'
@@ -9,8 +8,9 @@ import data from './data.json'
 
 export default function App() {
   const [activePage, setActivePage] = useState('LocationPage')
-  const [details, setDetails] = useState(null)
   const [locations] = useState(data)
+  const [detailsId, setDetailsId] = useState(null)
+  const details = locations.find(location => location.id === detailsId)
   const [bookmarkedIds, setBookmarkedIds] = useState(
     loadFromLocal('bookmarkedIds') ?? []
   )
@@ -34,7 +34,7 @@ export default function App() {
       {activePage === 'DetailsPage' && (
         <DetailsPage
           onNavigate={handleClickBack}
-          saveAsFavorite={saveAsFavorite}
+          toFavorite={toFavorite}
           details={details}
         />
       )}
@@ -51,18 +51,12 @@ export default function App() {
   )
 
   function showDetail(id) {
-    const newdetails = locations.find(location => location.id === id)
-
     setActivePage('DetailsPage')
-    setDetails(newdetails)
+    setDetailsId(id)
   }
 
   function handleClickBack() {
     setActivePage('LocationPage')
-  }
-
-  function saveAsFavorite() {
-    setActivePage('FavoritePage')
   }
 
   function toFavorite() {
@@ -70,8 +64,10 @@ export default function App() {
   }
 
   function handleBookmark(id) {
-    if (bookmarkedIds.some(favId => favId === id)) {
-      setBookmarkedIds(bookmarkedIds.filter(favId => favId !== id))
+    if (bookmarkedIds.some(bookmarkedId => bookmarkedId === id)) {
+      setBookmarkedIds(
+        bookmarkedIds.filter(bookmarkedId => bookmarkedId !== id)
+      )
     } else {
       setBookmarkedIds([...bookmarkedIds, id])
     }

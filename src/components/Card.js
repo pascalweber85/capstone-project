@@ -1,4 +1,3 @@
-//@ts-check
 import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
 import Bookmark from './../components/Bookmark'
@@ -9,6 +8,8 @@ Card.propTypes = {
   ratingImage: PropTypes.node,
   text: PropTypes.string,
   onDetail: PropTypes.func,
+  handleBookmark: PropTypes.func,
+  isBookmarked: PropTypes.bool,
 }
 
 export default function Card({

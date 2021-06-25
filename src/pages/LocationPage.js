@@ -7,6 +7,10 @@ import FavButton from '../components/FavButton'
 
 LocationPage.propTypes = {
   onDetail: PropTypes.func.isRequired,
+  location: PropTypes.array,
+  handleBookmark: PropTypes.func,
+  toFavorite: PropTypes.func.isRequired,
+  bookmarkedIds: PropTypes.any,
 }
 
 export default function LocationPage({
