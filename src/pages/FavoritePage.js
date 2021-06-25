@@ -5,7 +5,7 @@ import Header from './../components/Header'
 import Card from './../components/Card'
 
 FavoritePage.propTypes = {
-  onNavigate: PropTypes.func.isRequired,
+  onNavigate: PropTypes.func,
   bookmarkedIds: PropTypes.any,
   location: PropTypes.array,
   handleBookmark: PropTypes.func,

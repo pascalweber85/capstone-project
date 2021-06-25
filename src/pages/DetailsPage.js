@@ -5,8 +5,8 @@ import FavButton from './../components/FavButton'
 import Header from './../components/Header'
 
 DetailsPage.propTypes = {
-  onNavigate: PropTypes.func.isRequired,
-  toFavorite: PropTypes.func.isRequired,
+  onNavigate: PropTypes.func,
+  toFavorite: PropTypes.func,
   details: PropTypes.shape({
     title: PropTypes.string,
     main_image_path: PropTypes.string,
