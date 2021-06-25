@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Bookmark from './../components/Bookmark'
 
 Card.propTypes = {
+  id: PropTypes.number,
   image: PropTypes.node,
   title: PropTypes.string,
   ratingImage: PropTypes.node,

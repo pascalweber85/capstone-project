@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import FavButton from '../components/FavButton'
 
 LocationPage.propTypes = {
+  id: PropTypes.number,
   onDetail: PropTypes.func.isRequired,
   location: PropTypes.array,
   handleBookmark: PropTypes.func,
