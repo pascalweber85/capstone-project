@@ -1,16 +1,14 @@
-//@ts-check
 import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
 import Card from '../components/Card'
 import Header from '../components/Header'
-import FavButton from '../components/FavButton'
 
 LocationPage.propTypes = {
   id: PropTypes.number,
   onDetail: PropTypes.func.isRequired,
   location: PropTypes.array,
   handleBookmark: PropTypes.func,
-  toFavorite: PropTypes.func.isRequired,
+
   bookmarkedIds: PropTypes.any,
 }
 
@@ -18,7 +16,6 @@ export default function LocationPage({
   onDetail,
   locations,
   handleBookmark,
-  toFavorite,
   bookmarkedIds,
 }) {
   return (
@@ -43,7 +40,6 @@ export default function LocationPage({
           }
         )}
       </ListWrapper>
-      <FavButton onClick={toFavorite}>Favoriten</FavButton>
     </Wrapper>
   )
 }
@@ -58,9 +54,3 @@ const ListWrapper = styled.ul`
   padding: 0;
   width: 350px;
 `
-
-// const Wrapper = styled.section`
-//   display: grid;
-//   justify-items: center;
-//   max-width: 600px;
-// `
