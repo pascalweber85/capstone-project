@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { loadFromLocal, saveToLocal } from './utils/localStorage'
 import { Route, Switch, useHistory } from 'react-router-dom'
 import styled from 'styled-components/macro'
+import Navigation from './components/Navigation'
 import LocationPage from './pages/LocationPage'
 import DetailsPage from './pages/DetailsPage'
 import FavoritePage from './pages/FavoritePage'
@@ -15,6 +16,11 @@ export default function App() {
     loadFromLocal('bookmarkedIds') ?? []
   )
 
+  const pages = [
+    { title: 'Locations', path: '/' },
+    { title: 'Favorites', path: '/FavoritePage' },
+  ]
+
   useEffect(() => {
     saveToLocal('bookmarkedIds', bookmarkedIds)
   }, [bookmarkedIds])
@@ -26,6 +32,7 @@ export default function App() {
       <Switch>
         <Route exact path="/">
           <LocationPage
+            pages={pages}
             onDetail={showDetail}
             bookmarkedIds={bookmarkedIds}
             locations={locations}
@@ -51,6 +58,9 @@ export default function App() {
           />
         </Route>
       </Switch>
+      <Route exact path={['/', '/FavoritePage']}>
+        <Navigation pages={pages} />
+      </Route>
     </AppGrid>
   )
 
@@ -84,5 +94,8 @@ export default function App() {
 
 const AppGrid = styled.section`
   display: grid;
+  grid-template-rows: auto 4rem;
+  width: 100vw;
+  height: 100vh;
   justify-items: center;
 `

@@ -16,7 +16,6 @@ DetailsPage.propTypes = {
   }),
 }
 export default function DetailsPage({
-  handleDetails,
   onNavigate,
   toFavorite,
   details: { title, main_image_path, öffnungszeiten, beschreibung },
@@ -24,34 +23,32 @@ export default function DetailsPage({
   // const { id } = useParams()
   // handleDetails(id)
   return (
-    <>
+    <Wrapper>
       <div>
         <BackButton onClick={onNavigate}>&lt; back</BackButton>
       </div>
       <Header>Details</Header>
-      <Wrapper>
-        <FavButton onClick={toFavorite}>gehe zu den Favorite</FavButton>
-        <h2>{title}</h2>
-        <img src={main_image_path} alt="" />
-        <h3>Öffnungszeiten:</h3>
-        <ul>
-          {öffnungszeiten.map(öffnungszeit => (
-            <li key={öffnungszeit}>{öffnungszeit}</li>
-          ))}
-        </ul>
-        <h3>Beschreibung:</h3>
-        <p>{beschreibung}</p>
-      </Wrapper>
-    </>
+
+      <FavButton onClick={toFavorite}>gehe zu den Favorite</FavButton>
+      <h2>{title}</h2>
+      <img src={main_image_path} alt="" />
+      <h3>Öffnungszeiten:</h3>
+      <ul>
+        {öffnungszeiten.map(öffnungszeit => (
+          <li key={öffnungszeit}>{öffnungszeit}</li>
+        ))}
+      </ul>
+      <h3>Beschreibung:</h3>
+      <p>{beschreibung}</p>
+    </Wrapper>
   )
 }
 
 const Wrapper = styled.section`
   display: grid;
-  justify-items: center;
-  max-width: 600px;
-  padding: 10px;
+  overflow-y: auto;
   color: whitesmoke;
+  justify-items: center;
 
   img {
     width: 350px;
@@ -61,9 +58,14 @@ const Wrapper = styled.section`
   li {
     list-style-type: none;
   }
+
+  p {
+    padding: 10px;
+  }
 `
 const BackButton = styled(Button)`
   position: absolute;
+  z-index: 2;
   left: 2em;
-  top: 3em;
+  top: 2em;
 `

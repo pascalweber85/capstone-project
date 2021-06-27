@@ -10,5 +10,6 @@ export default createGlobalStyle`
    font-family: Arial, Helvetica, sans-serif;
    line-height: 1.4;
    background: darkgoldenrod;
+   overflow-x: hidden;
  }
 `

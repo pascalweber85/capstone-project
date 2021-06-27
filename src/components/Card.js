@@ -24,25 +24,25 @@ export default function Card({
   isBookmarked,
 }) {
   return (
-    <>
+    <CardWrapper>
       <Bookmark
         isBookmarked={isBookmarked}
         aria-label="Add location to favorites"
         onClick={() => handleBookmark(id)}
       />
-      <Wrapper onClick={onDetail}>
+      <CardList onClick={onDetail}>
         <img src={image} alt="" />
         <div>
           <h2>{title}</h2>
           <img src={ratingImage} alt="rated with 5 stars" />
           <p>{text}</p>
         </div>
-      </Wrapper>
-    </>
+      </CardList>
+    </CardWrapper>
   )
 }
 
-const Wrapper = styled.section`
+const CardList = styled.section`
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 8px 16px #0006;
@@ -50,14 +50,14 @@ const Wrapper = styled.section`
   gap: 10px;
   justify-content: center;
   width: auto;
-  max-width: 350px;
-  margin: 0px 12px;
+  max-width: 100%;
   color: black;
   background-color: whitesmoke;
 
   img {
     justify-self: start;
     width: 150px;
+    object-fit: cover;
   }
 
   h2 {
@@ -65,4 +65,7 @@ const Wrapper = styled.section`
     word-wrap: break-word;
     width: 16ch;
   }
+`
+const CardWrapper = styled.section`
+  position: relative;
 `

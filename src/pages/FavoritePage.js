@@ -1,12 +1,10 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components/macro'
-import Button from './../components/Button'
 import Header from './../components/Header'
 import Card from './../components/Card'
 
 FavoritePage.propTypes = {
   onDetail: PropTypes.func.isRequired,
-  onNavigate: PropTypes.func,
   bookmarkedIds: PropTypes.any,
   location: PropTypes.array,
   handleBookmark: PropTypes.func,
@@ -14,7 +12,6 @@ FavoritePage.propTypes = {
 
 export default function FavoritePage({
   onDetail,
-  onNavigate,
   bookmarkedIds,
   locations,
   handleBookmark,
@@ -23,43 +20,45 @@ export default function FavoritePage({
     bookmarkedIds.includes(location.id)
   )
   return (
-    <>
-      <div>
-        <BackButton onClick={onNavigate}>&lt; back</BackButton>
-      </div>
+    <Wrapper>
       <Header>Favorites</Header>
-      <Wrapper>
-        {favoriteLocations.length > 0
-          ? favoriteLocations.map(
-              ({ id, main_image_path, title, rating_image_path, text }) => (
-                <Card
-                  key={id}
-                  id={id}
-                  image={main_image_path}
-                  title={title}
-                  ratingImage={rating_image_path}
-                  text={text}
-                  handleBookmark={handleBookmark}
-                  isBookmarked={true}
-                  onDetail={() => onDetail(id)}
-                />
+      {favoriteLocations.length > 0 ? (
+        <ListWrapper>
+          {favoriteLocations.map(
+            ({ id, main_image_path, title, rating_image_path, text }) => {
+              return (
+                <li key={id}>
+                  <Card
+                    id={id}
+                    image={main_image_path}
+                    title={title}
+                    ratingImage={rating_image_path}
+                    text={text}
+                    handleBookmark={handleBookmark}
+                    isBookmarked={true}
+                    onDetail={() => onDetail(id)}
+                  />
+                </li>
               )
-            )
-          : 'Du hast noch keine Location ausgewählt!'}
-      </Wrapper>
-    </>
+            }
+          )}
+        </ListWrapper>
+      ) : (
+        'Du hast noch keine Location ausgewählt!'
+      )}
+    </Wrapper>
   )
 }
 
 const Wrapper = styled.section`
   display: grid;
+  overflow-y: auto;
   justify-items: center;
-  max-width: 600px;
-  padding: 10px;
-  color: whitesmoke;
+  width: 100%;
 `
-const BackButton = styled(Button)`
-  position: absolute;
-  left: 2em;
-  top: 3em;
+
+const ListWrapper = styled.ul`
+  list-style-type: none;
+  padding: 0;
+  width: 350px;
 `
