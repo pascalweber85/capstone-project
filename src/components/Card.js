@@ -1,6 +1,7 @@
 import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
 import Bookmark from './../components/Bookmark'
+import StarRating from './../components/StarRating'
 
 Card.propTypes = {
   id: PropTypes.number,
@@ -34,6 +35,7 @@ export default function Card({
         <img src={image} alt="" />
         <div>
           <h2>{title}</h2>
+          <StarRating />
           <img src={ratingImage} alt="rated with 5 stars" />
           <p>{text}</p>
         </div>
