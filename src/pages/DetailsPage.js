@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components/macro'
-import Button from './../components/Button'
+import Button from './../components/FavButton'
 import Header from './../components/Header'
 import { useHistory } from 'react-router-dom'
 // import { useParams } from 'react-router'
@@ -22,9 +22,6 @@ export default function DetailsPage({
   // handleDetails(id)
   return (
     <Wrapper>
-      <div>
-        <BackButton onClick={() => history.goBack()}>&lt; back</BackButton>
-      </div>
       <Header>Details</Header>
 
       <h2>{title}</h2>
@@ -37,6 +34,9 @@ export default function DetailsPage({
       </ul>
       <h3>Beschreibung:</h3>
       <p>{beschreibung}</p>
+      <div>
+        <FavButton onClick={() => history.goBack()}>&lt; back</FavButton>
+      </div>
     </Wrapper>
   )
 }
@@ -60,10 +60,15 @@ const Wrapper = styled.section`
     padding: 10px;
   }
 `
-const BackButton = styled(Button)`
+const FavButton = styled(Button)`
   position: absolute;
   display: grid;
+  justify-items: center;
   z-index: 2;
-  left: center;
-  bottom: 1.3em;
+  bottom: 0;
+  margin-bottom: 5px;
+  left: 25%;
+  width: 50%;
 `
+
+// width: 100%;
