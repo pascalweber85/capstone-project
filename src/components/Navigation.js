@@ -43,6 +43,7 @@ const StyledNavLink = styled(NavLink)`
   border: none;
   color: grey;
   text-decoration: none;
+  border: whitesmoke solid 1px;
   box-shadow: 5px 5px 10px rgba(13, 13, 13, 0.2);
   &:hover {
     background: linear-gradient(0deg, #483939, #9f1414);
