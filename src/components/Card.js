@@ -58,6 +58,7 @@ const CardList = styled.section`
     justify-self: start;
     width: 150px;
     object-fit: cover;
+    border-radius: 5px;
   }
 
   h2 {

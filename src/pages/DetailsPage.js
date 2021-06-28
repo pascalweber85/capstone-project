@@ -66,6 +66,7 @@ const FavButton = styled(Button)`
   justify-items: center;
   z-index: 2;
   bottom: 0;
+  margin-bottom: 5px;
   left: 25%;
   width: 50%;
 `
