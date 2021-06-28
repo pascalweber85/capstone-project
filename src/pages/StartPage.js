@@ -1,30 +1,33 @@
 import styled from 'styled-components/macro'
 import Header from './../components/Header'
+import background from './../Images/augustusplatz.jpg'
 
 export default function StartPage() {
   return (
     <Wrapper>
-      <Header>Welcome</Header>
+      <Header>Leipzig Bookmarked</Header>
+      <p>
+        Willkommen in Leipzig. Hier kannst du coole Locations finden und zu
+        deinen Favoriten hinzufügen. Viel Spaß beim Erkunden!
+      </p>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.section`
+  background-image: url(${background});
   display: grid;
   overflow-y: auto;
   width: 100%;
-  justify-items: center;
-
-  /* img {
-    width: 350px;
-    border: 2px solid white;
-    border-radius: 10px;
-  }
-  li {
-    list-style-type: none;
-  }
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   p {
-    padding: 10px;
-  } */
+    display: grid;
+    place-items: end;
+    text-align: center;
+    color: bisque;
+    padding: 20px;
+  }
 `

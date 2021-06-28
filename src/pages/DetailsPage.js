@@ -44,7 +44,7 @@ export default function DetailsPage({
 const Wrapper = styled.section`
   display: grid;
   overflow-y: auto;
-  color: whitesmoke;
+  color: darkgray;
   justify-items: center;
 
   img {
