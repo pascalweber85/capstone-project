@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components/macro'
 import Button from './../components/Button'
-import FavButton from './../components/FavButton'
 import Header from './../components/Header'
+import { useHistory } from 'react-router-dom'
 // import { useParams } from 'react-router'
 
 DetailsPage.propTypes = {
-  onNavigate: PropTypes.func,
-  toFavorite: PropTypes.func,
+  history: PropTypes.func,
   details: PropTypes.shape({
     title: PropTypes.string,
     main_image_path: PropTypes.string,
@@ -16,20 +15,18 @@ DetailsPage.propTypes = {
   }),
 }
 export default function DetailsPage({
-  onNavigate,
-  toFavorite,
   details: { title, main_image_path, öffnungszeiten, beschreibung },
 }) {
+  let history = useHistory()
   // const { id } = useParams()
   // handleDetails(id)
   return (
     <Wrapper>
       <div>
-        <BackButton onClick={onNavigate}>&lt; back</BackButton>
+        <BackButton onClick={() => history.goBack()}>&lt; back</BackButton>
       </div>
       <Header>Details</Header>
 
-      <FavButton onClick={toFavorite}>gehe zu den Favorite</FavButton>
       <h2>{title}</h2>
       <img src={main_image_path} alt="" />
       <h3>Öffnungszeiten:</h3>
@@ -65,7 +62,8 @@ const Wrapper = styled.section`
 `
 const BackButton = styled(Button)`
   position: absolute;
+  display: grid;
   z-index: 2;
-  left: 2em;
-  top: 2em;
+  left: center;
+  bottom: 1.3em;
 `
