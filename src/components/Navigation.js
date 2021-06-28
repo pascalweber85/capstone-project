@@ -31,8 +31,9 @@ const Nav = styled.nav`
   height: 4rem;
   background-color: whitesmoke;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+  width: 100%;
 `
 
 const StyledNavLink = styled(NavLink)`

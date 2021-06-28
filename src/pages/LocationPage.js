@@ -8,7 +8,6 @@ LocationPage.propTypes = {
   onDetail: PropTypes.func.isRequired,
   location: PropTypes.array,
   handleBookmark: PropTypes.func,
-
   bookmarkedIds: PropTypes.any,
 }
 

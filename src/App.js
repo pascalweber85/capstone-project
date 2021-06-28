@@ -3,6 +3,7 @@ import { loadFromLocal, saveToLocal } from './utils/localStorage'
 import { Route, Switch, useHistory } from 'react-router-dom'
 import styled from 'styled-components/macro'
 import Navigation from './components/Navigation'
+import StartPage from './pages/StartPage'
 import LocationPage from './pages/LocationPage'
 import DetailsPage from './pages/DetailsPage'
 import FavoritePage from './pages/FavoritePage'
@@ -17,7 +18,8 @@ export default function App() {
   )
 
   const pages = [
-    { title: 'Locations', path: '/' },
+    { title: 'Start', path: '/' },
+    { title: 'Locations', path: '/LocationPage' },
     { title: 'Favorites', path: '/FavoritePage' },
   ]
 
@@ -31,8 +33,10 @@ export default function App() {
     <AppGrid>
       <Switch>
         <Route exact path="/">
+          <StartPage pages={pages} />
+        </Route>
+        <Route path="/LocationPage">
           <LocationPage
-            pages={pages}
             onDetail={showDetail}
             bookmarkedIds={bookmarkedIds}
             locations={locations}
@@ -54,7 +58,7 @@ export default function App() {
           />
         </Route>
       </Switch>
-      <Route exact path={['/', '/FavoritePage']}>
+      <Route exact path={['/', '/LocationPage', '/FavoritePage']}>
         <Navigation pages={pages} />
       </Route>
     </AppGrid>
