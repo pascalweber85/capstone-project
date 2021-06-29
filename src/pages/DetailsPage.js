@@ -3,7 +3,6 @@ import styled from 'styled-components/macro'
 import Button from './../components/FavButton'
 import Header from './../components/Header'
 import { useHistory } from 'react-router-dom'
-// import { useParams } from 'react-router'
 
 DetailsPage.propTypes = {
   history: PropTypes.func,
@@ -18,8 +17,7 @@ export default function DetailsPage({
   details: { title, main_image_path, öffnungszeiten, beschreibung },
 }) {
   let history = useHistory()
-  // const { id } = useParams()
-  // handleDetails(id)
+
   return (
     <Wrapper>
       <Header>Details</Header>

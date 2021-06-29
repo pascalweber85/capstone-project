@@ -50,11 +50,8 @@ export default function App() {
             rating={rating}
           />
         </Route>
-        <Route path="/DetailsPage/:id">
-          <DetailsPage
-            details={details}
-            // handleDetails={handleDetails}
-          />
+        <Route path="/DetailsPage/">
+          <DetailsPage details={details} />
         </Route>
         <Route path="/FavoritePage">
           <FavoritePage
@@ -77,10 +74,6 @@ export default function App() {
     setDetailsId(id)
     push('/DetailsPage/' + id)
   }
-
-  // function handleDetails(id) {
-  //   setDetailsId(id)
-  // }
 
   function handleBookmark(id) {
     if (bookmarkedIds.some(bookmarkedId => bookmarkedId === id)) {
