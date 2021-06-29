@@ -32,6 +32,7 @@ export default function Card({
         aria-label="Add location to favorites"
         onClick={() => handleBookmark(id)}
       />
+
       <CardList>
         <img src={image} alt="" onClick={onDetail} />
         <div>
@@ -43,6 +44,10 @@ export default function Card({
     </CardWrapper>
   )
 }
+
+const CardWrapper = styled.section`
+  position: relative;
+`
 
 const CardList = styled.section`
   padding: 20px;
@@ -68,7 +73,11 @@ const CardList = styled.section`
     word-wrap: break-word;
     width: 16ch;
   }
-`
-const CardWrapper = styled.section`
-  position: relative;
+
+  p {
+    display: grid;
+    place-items: center;
+    justify-self: center;
+    text-align: center;
+  }
 `
