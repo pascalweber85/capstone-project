@@ -15,6 +15,8 @@ export default function FavoritePage({
   bookmarkedIds,
   locations,
   handleBookmark,
+  rating,
+  onRating,
 }) {
   const favoriteLocations = locations.filter(location =>
     bookmarkedIds.includes(location.id)
@@ -36,6 +38,8 @@ export default function FavoritePage({
                     text={text}
                     handleBookmark={handleBookmark}
                     isBookmarked={true}
+                    rating={rating}
+                    onRating={onRating}
                     onDetail={() => onDetail(id)}
                   />
                 </li>

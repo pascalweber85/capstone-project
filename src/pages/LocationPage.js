@@ -16,6 +16,8 @@ export default function LocationPage({
   locations,
   handleBookmark,
   bookmarkedIds,
+  onRating,
+  rating,
 }) {
   return (
     <Wrapper>
@@ -33,6 +35,8 @@ export default function LocationPage({
                 text={text}
                 isBookmarked={bookmarkedIds.includes(id)}
                 handleBookmark={handleBookmark}
+                onRating={onRating}
+                rating={rating}
                 onDetail={() => onDetail(id)}
               />
             )

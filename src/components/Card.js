@@ -18,10 +18,11 @@ export default function Card({
   id,
   image,
   title,
-  ratingImage,
   text,
   onDetail,
   handleBookmark,
+  onRating,
+  rating,
   isBookmarked,
 }) {
   return (
@@ -31,12 +32,11 @@ export default function Card({
         aria-label="Add location to favorites"
         onClick={() => handleBookmark(id)}
       />
-      <CardList onClick={onDetail}>
-        <img src={image} alt="" />
+      <CardList>
+        <img src={image} alt="" onClick={onDetail} />
         <div>
           <h2>{title}</h2>
-          <StarRating />
-          <img src={ratingImage} alt="rated with 5 stars" />
+          <StarRating onRating={onRating} id={id} rating={rating} />
           <p>{text}</p>
         </div>
       </CardList>

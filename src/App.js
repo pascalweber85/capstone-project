@@ -16,6 +16,7 @@ export default function App() {
   const [bookmarkedIds, setBookmarkedIds] = useState(
     loadFromLocal('bookmarkedIds') ?? []
   )
+  const [rating, setRating] = useState(loadFromLocal('rating') ?? [])
 
   const pages = [
     { title: 'Start', path: '/' },
@@ -26,6 +27,10 @@ export default function App() {
   useEffect(() => {
     saveToLocal('bookmarkedIds', bookmarkedIds)
   }, [bookmarkedIds])
+
+  useEffect(() => {
+    saveToLocal('rating', rating)
+  }, [rating])
 
   const { push } = useHistory()
 
@@ -41,6 +46,8 @@ export default function App() {
             bookmarkedIds={bookmarkedIds}
             locations={locations}
             handleBookmark={handleBookmark}
+            onRating={handleStars}
+            rating={rating}
           />
         </Route>
         <Route path="/DetailsPage/:id">
@@ -55,6 +62,8 @@ export default function App() {
             locations={locations}
             bookmarkedIds={bookmarkedIds}
             handleBookmark={handleBookmark}
+            onRating={handleStars}
+            rating={rating}
           />
         </Route>
       </Switch>
@@ -80,6 +89,15 @@ export default function App() {
       )
     } else {
       setBookmarkedIds([...bookmarkedIds, id])
+    }
+  }
+
+  function handleStars(newRating) {
+    const index = rating.findIndex(el => el.id === newRating.id)
+    if (index !== -1) {
+      setRating([...rating, (rating[index].rating = newRating.rating)])
+    } else {
+      setRating([...rating, newRating])
     }
   }
 }
