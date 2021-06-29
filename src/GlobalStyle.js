@@ -9,6 +9,7 @@ export default createGlobalStyle`
    margin: 0;
    font-family: Arial, Helvetica, sans-serif;
    line-height: 1.4;
-   background: darkgoldenrod;
+   background: bisque;
+   overflow-x: hidden;
  }
 `

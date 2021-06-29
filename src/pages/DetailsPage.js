@@ -1,13 +1,11 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components/macro'
-import Button from './../components/Button'
-import FavButton from './../components/FavButton'
+import Button from './../components/FavButton'
 import Header from './../components/Header'
-// import { useParams } from 'react-router'
+import { useHistory } from 'react-router-dom'
 
 DetailsPage.propTypes = {
-  onNavigate: PropTypes.func,
-  toFavorite: PropTypes.func,
+  history: PropTypes.func,
   details: PropTypes.shape({
     title: PropTypes.string,
     main_image_path: PropTypes.string,
@@ -16,42 +14,36 @@ DetailsPage.propTypes = {
   }),
 }
 export default function DetailsPage({
-  handleDetails,
-  onNavigate,
-  toFavorite,
   details: { title, main_image_path, öffnungszeiten, beschreibung },
 }) {
-  // const { id } = useParams()
-  // handleDetails(id)
+  let history = useHistory()
+
   return (
-    <>
-      <div>
-        <BackButton onClick={onNavigate}>&lt; back</BackButton>
-      </div>
+    <Wrapper>
       <Header>Details</Header>
-      <Wrapper>
-        <FavButton onClick={toFavorite}>gehe zu den Favorite</FavButton>
-        <h2>{title}</h2>
-        <img src={main_image_path} alt="" />
-        <h3>Öffnungszeiten:</h3>
-        <ul>
-          {öffnungszeiten.map(öffnungszeit => (
-            <li key={öffnungszeit}>{öffnungszeit}</li>
-          ))}
-        </ul>
-        <h3>Beschreibung:</h3>
-        <p>{beschreibung}</p>
-      </Wrapper>
-    </>
+
+      <h2>{title}</h2>
+      <img src={main_image_path} alt="" />
+      <h3>Öffnungszeiten:</h3>
+      <ul>
+        {öffnungszeiten.map(öffnungszeit => (
+          <li key={öffnungszeit}>{öffnungszeit}</li>
+        ))}
+      </ul>
+      <h3>Beschreibung:</h3>
+      <p>{beschreibung}</p>
+      <div>
+        <FavButton onClick={() => history.goBack()}>&lt; back</FavButton>
+      </div>
+    </Wrapper>
   )
 }
 
 const Wrapper = styled.section`
   display: grid;
+  overflow-y: auto;
+  color: darkgray;
   justify-items: center;
-  max-width: 600px;
-  padding: 10px;
-  color: whitesmoke;
 
   img {
     width: 350px;
@@ -61,9 +53,18 @@ const Wrapper = styled.section`
   li {
     list-style-type: none;
   }
+
+  p {
+    padding: 10px;
+  }
 `
-const BackButton = styled(Button)`
+const FavButton = styled(Button)`
   position: absolute;
-  left: 2em;
-  top: 3em;
+  display: grid;
+  justify-items: center;
+  z-index: 2;
+  bottom: 0;
+  margin-bottom: 5px;
+  left: 25%;
+  width: 50%;
 `

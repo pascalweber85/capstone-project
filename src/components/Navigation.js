@@ -1,0 +1,51 @@
+import PropTypes from 'prop-types'
+import { NavLink } from 'react-router-dom'
+import styled from 'styled-components/macro'
+
+Navigation.propTypes = {
+  pages: PropTypes.arrayOf(
+    PropTypes.shape({ title: PropTypes.string, path: PropTypes.string })
+  ),
+}
+
+export default function Navigation({ pages }) {
+  return (
+    <Nav>
+      {pages.map(({ title, path }) => (
+        <StyledNavLink
+          activeStyle={{
+            background: 'linear-gradient(0deg, #483939, #9f1414)',
+          }}
+          key={title}
+          exact
+          to={path}
+        >
+          {title}
+        </StyledNavLink>
+      ))}
+    </Nav>
+  )
+}
+
+const Nav = styled.nav`
+  height: 4rem;
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  width: 100%;
+`
+
+const StyledNavLink = styled(NavLink)`
+  width: 100%;
+  text-align: center;
+  padding: 16px 16px;
+  border: none;
+  color: grey;
+  text-decoration: none;
+  border: whitesmoke solid 1px;
+  box-shadow: 5px 5px 10px rgba(13, 13, 13, 0.2);
+  &:hover {
+    background: linear-gradient(0deg, #483939, #9f1414);
+  }
+`

@@ -25,7 +25,7 @@ const BookmarkStyled = styled.div`
   img {
     position: relative;
     top: 40px;
-    left: 140px;
+    left: 130px;
     height: 33px;
     width: 26px;
   }

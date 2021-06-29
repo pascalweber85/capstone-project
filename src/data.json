@@ -21,7 +21,7 @@
     "id": 2,
     "title": "Zoo Leipzig",
     "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
-    "text": "Freizeit",
+    "text": "Freizeit & Park",
     "main_image_path": "https://images.unsplash.com/photo-1583603082237-ec17496f233f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGxlaXB6aWclMjB6b298ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60",
     "beschreibung": "Der Zoo Leipzig ist ein 26 Hektar (davon 2,1 Hektar Wasserfläche) großer parkartig gestalteter Zoologischer Garten am Rosental, nordwestlich der Leipziger Innenstadt. Er zählt zu den artenreichsten Zoos in Europa. Seit 2000 wird der Zoo großflächig unter dem Projektnamen „Zoo der Zukunft“ umgebaut und erweitert. Bis 2022 soll ein Umbau in einzelnen Themenbereichen erfolgen. Laut des Sheridan-Zoo-Rankings des Briten Anthony Sheridan belegt der Zoo Leipzig bereits seit mehreren Jahren Platz zwei der besten Zoos in Europa (nach dem Tiergarten Schönbrunn) und Platz eins innerhalb Deutschlands.",
     "öffnungszeiten": [
@@ -57,7 +57,7 @@
     "id": 4,
     "title": "Absturz",
     "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
-    "text": "Club, Disco",
+    "text": "Ausgehen & Party",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/WQFxvDYi-Rr3_UiBeRImlg/o.jpg",
     "beschreibung": "Absturz Leipzig - Das Absturz auf dem Gelände der Feinkost ist Club, Bar u.v.m.. Regelmäßige Veranstaltungen auf der Bühne runden das Bild vom Absturz ab. ",
     "öffnungszeiten": [
@@ -75,7 +75,7 @@
     "id": 5,
     "title": "Auerbachs Keller",
     "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
-    "text": "Restaurant, Bar",
+    "text": "Restaurant & Bar",
     "main_image_path": "https://images.unsplash.com/photo-1619434863454-356cc340148f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGxlaXB6aWd8ZW58MHx8MHx8&auto=format&fit=crop&w=300&q=60",
     "beschreibung": "Historisches Restaurant im Herzen der Leipziger Altstadt, in dem schon Goethe eingekehrt ist. Im Gemäuer der Mädlerpassage lässt es sich exzellent Essen, hier werden erstklassige Gerichte angeboten. Der Küchenschluss ist zwischen 21 und 22 Uhr. In der Mephisto Bar wird jeden Abend ab 21 Uhr LIVE-Musik gespielt. ",
     "öffnungszeiten": [
@@ -93,7 +93,7 @@
     "id": 6,
     "title": "Bayerischer Bahnhof",
     "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
-    "text": "€€, Deutsch, Biergarten, Bayerische Küche",
+    "text": "Restaurant & Bar",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/L8J2MV8Yex86h739GWtsWw/348s.jpg",
     "beschreibung": "Der älteste erhaltene Kopfbahnhof der Welt in Leipzig ist sowohl Gasthaus als auch Brauerei. Hier hat die Leipziger Bierspezialität Gose ihr Zuhause.",
     "öffnungszeiten": [
@@ -111,7 +111,7 @@
     "id": 7,
     "title": "Café Madrid",
     "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
-    "text": "€€€, Spanisch, Café, Tapas",
+    "text": "Restaurant & Bar",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/uO6ER8_cMgDNH0FAlMWo7g/348s.jpg",
     "beschreibung": "Café Madrid Leipzig - Das Café Madrid ist ein spanisches Restaurant in Leipzig. In der Innenstadt gelegen, werden hier Spezialitäten wie Paella serviert. ",
     "öffnungszeiten": [
@@ -129,7 +129,7 @@
     "id": 8,
     "title": "Bagel Brothers",
     "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
-    "text": "€€, Bagels, Desserts, Coffee Shop",
+    "text": "Restaurant & Bar",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/VkUmxfJTc3ogJa9x6za0vA/348s.jpg",
     "beschreibung": "Eines von 2 Häusern der Bagel Brothers Restaurants in Leipzig. Hier gibt es Sandwiches, Bagels, Salate, Süßes und Kaffee sowie viele weitere Getränke.",
     "öffnungszeiten": [
@@ -147,7 +147,7 @@
     "id": 9,
     "title": "Sakura",
     "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
-    "text": "€€, Sushi, Buffet",
+    "text": "Restaurant & Bar",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/Gd7Q7cvdxsVLARQo45AIOQ/348s.jpg",
     "beschreibung": "Unsere Konzeption stellt sich die wesentliche Herausforderung zum Ziel, dem Gast die kompletten Sortimente asiatischer Küche mit hochwertiger Qualität anzubieten. Zu unseren Hauptspezialitäten zählen die nahrhaften aber fettarmen Sushi-Spezialitäten aus Japan, darüber hinaus gehören auch die auserwählten Kostbarkeiten aus dem indochinesischen Raum, wie die exo-tischen Salate, Snacks, Mixeds und Shakes zu unserem Sortiment. ",
     "öffnungszeiten": [
@@ -165,7 +165,7 @@
     "id": 10,
     "title": "City-Hochhaus",
     "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
-    "text": "Sehenswürdigkeiten",
+    "text": "Sehenswürdigkeit",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/b5Nk3v_LgBB-PqmChrhthg/348s.jpg",
     "beschreibung": "Mit 142,50m ist das City-Hochhaus das höchste Gebäude Leipzigs und besitzt im obersten Geschoss Man nennt es auch Uni-Riese, Weisheitszahn und MDR-Hochhaus.",
     "öffnungszeiten": [
@@ -183,7 +183,7 @@
     "id": 12,
     "title": "60 Seconds to Napoli",
     "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
-    "text": "€€, Italienisch, Pizza",
+    "text": "Restaurant & Bar",
     "main_image_path": "https://www.urbanite.net/media/images/locations/leipzig/959e370f780a8cb74b8aca0f561dbe2d__150x150_noop.jpg",
     "beschreibung": "Italienischer Hochgenuss im 60 Seconds to Napoli – seit Mai 2020 auch in Leipzig! Auf 83 Sitzplätzen im Innenraum und 56 weiteren auf der Terrasse könnt Ihr die beste Pizza in der Gottschedstr. 1 erleben. In einem modernen Ambiente bietet das 60 Seconds to Napoli allen Pizza-Liebhabern einen Platz zum Schlemmen und Genießen! ",
     "öffnungszeiten": [
@@ -201,7 +201,7 @@
     "id": 13,
     "title": "Imperii",
     "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
-    "text": "€€€, Lounge, Modern-Europäisch, Deutsch",
+    "text": "Restaurant & Bar",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/UX2slOH-xNkCfKeYv8a48w/348s.jpg",
     "beschreibung": "Die beste Adresse, um neue, alte Trinkkultur in Leipzig zu genießen. Dieser Ort eignet sich bestens, um klassische – moderne Drinks, aber auch ausgewählte Eigenkreationen vom preisgekrönten Barkeeper André Pintz und seinem Team zu probieren. Business Lunch Mo-Fr 12-14:30 Uhr",
     "öffnungszeiten": [
@@ -217,9 +217,9 @@
   },
   {
     "id": 14,
-    "title": "Maître",
+    "title": "Café Maître",
     "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
-    "text": "€€, Café, Konditorei",
+    "text": "Restaurant & Bar",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/9fOgkl5v_qHbKpCRwsC5CA/348s.jpg",
     "beschreibung": "Das Café Maître besticht mit französischen Bistroklassikern, wunderbaren Tartes, Quiches, Kuchen, Torten und Gebäck. Wer schon mal einen Blick auf die Baisergipfel im Schaufenster der Patisserie geworfen hat, wird auf magische Weise hineingezo- gen in den Laden - eine Welt aus Süßem, Tee, Cidre, Kaffee und vielem mehr. Tipp: Seit Oktober 2012 kann man im Backkurs lernen, wie diese traumhaften Torten auch daheim gelingen.",
     "öffnungszeiten": [
@@ -237,7 +237,7 @@
     "id": 15,
     "title": "Stadthafen Leipzig",
     "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
-    "text": "Bootsverleih, Beachvolleyball, Imbiss",
+    "text": "Freizeit & Park",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/dsDG5NmcXEYw_dZ99pz3SQ/348s.jpg",
     "beschreibung": "Am 18. April ist das 'Tor zum Leipziger Neuseenland' eröffnet worden. Vom Stadthafen aus können ausgedehnte Boots- und Radtouren in das Neuseenland unternommen werden. Zusätzlich gibt es am entstehenden Stadtstrand die Möglichkeit zum Beachvolleyball oder einem kühen Getränk auf der Terrasse. ",
     "öffnungszeiten": [
@@ -255,7 +255,7 @@
     "id": 16,
     "title": "Wildpark",
     "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
-    "text": "Zoo",
+    "text": "Freizeit & Park",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/4bGFs_47_vsvLk1DTRdLyA/348s.jpg",
     "beschreibung": "Im Süden Leipzigs, wo sich Elch und Eule Gute Nacht sagen, sorgt der Verein der Freunde und Förderer des Wildparks dafür, dass das Umweltbewusstsein der Menschen gestärkt wird und Wildtiere in ihrem natürlichen Lebensraum aufwachsen können. 1904 gegründet, beherbergt der Wildpark heute etwa 250 Tiere aus 30 Tierarten. Anders als im Zoo trifft man hier allerdings nicht auf Exoten, sondern heimische Arten wie Rotwild, Luchse, Otter und Wildschweine. Der Park wird von der Stadt betrieben und finanziert. Doch sind die finanziellen Mittel und die Öffentlichkeitsarbeit noch so ausbaufähig, dass sich im Jahr 2002 der Förderverein gründete. ",
     "öffnungszeiten": [
@@ -273,7 +273,7 @@
     "id": 17,
     "title": "Cospudener See",
     "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
-    "text": "See, Amateursport, Hundepark",
+    "text": "Freizeit & Park",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/5R75-LtdTVWtM0GJtq6LHw/348s.jpg",
     "beschreibung": "Langer Sandstrand, Beachvolleyballnetze und Sonnenliegen – Leipzigs beliebtestes Naherholungsgebiet, die Costa Cospuden. Der Cospudener See entwickelte sich zu einem der schönsten und beliebtesten Seen in und um Leipzig. ",
     "öffnungszeiten": [
@@ -291,7 +291,7 @@
     "id": 18,
     "title": "Club L1",
     "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
-    "text": "€€, Club & Disco",
+    "text": "Ausgehen & Party",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/VIN-2dtOJfbU5I7w7ttO_A/348s.jpg",
     "beschreibung": "Hier feiert ihr königlich! Der Club L1 ist eine exklusive Eventlocation in der Könighauspassage am Leipziger Marktplatz.Genießt einen besonderen Abend in der großzügigen und eleganten Lounge und den angrenzenden Dancefloors mit einer Vielfalt wechselnder Partys aus Black, House und Minimal. Der Club L1 kann auch als Eventlocaton angemietet werden.",
     "öffnungszeiten": [
@@ -309,7 +309,7 @@
     "id": 19,
     "title": "Staubsauger",
     "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
-    "text": "€€, Bar, Club & Disco",
+    "text": "Ausgehen & Party",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/ZCYVNjebC-prXTedu3O3Mg/348s.jpg",
     "beschreibung": "Im Herzen der Südvorstadt findet sich ein Club, dessen Name Befreiung von allerlei unliebsamen Partikelchen verspricht.",
     "öffnungszeiten": [
@@ -327,7 +327,7 @@
     "id": 20,
     "title": "DarkFlower",
     "rating_image_path": "https://t3.ftcdn.net/jpg/03/35/91/90/240_F_335919003_TH0ZtHZZ5QGT34n1NcQXzRGvz4Pthg11.jpg",
-    "text": "€€€€, Club & Disco",
+    "text": "Ausgehen & Party",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/bow4ZZU5X0Y6Fj4fsMuAYA/348s.jpg",
     "beschreibung": "Darkflower Alternative Club Leipzig- Das Darkflower ist Treff der schwarzen Szene. Der bekannteste schwarze Szene-Club bietet alles von Alternative bis EBM.",
     "öffnungszeiten": [
