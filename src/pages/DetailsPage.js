@@ -42,7 +42,7 @@ export default function DetailsPage({
 const Wrapper = styled.section`
   display: grid;
   overflow-y: auto;
-  color: darkgray;
+  color: black;
   justify-items: center;
 
   img {

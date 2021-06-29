@@ -28,7 +28,7 @@ export default function StarRating({ id, onRating, rating }) {
           </label>
         )
       })}
-      <p>Bewertung von {stars} Sternen. </p>
+      <p>Bewertung</p>
     </StarStyled>
   )
 
@@ -40,7 +40,7 @@ export default function StarRating({ id, onRating, rating }) {
 
 const StarStyled = styled.div`
   background-color: whitesmoke;
-  font-size: 1.5em;
+  font-size: 1.39em;
 
   input {
     display: none;

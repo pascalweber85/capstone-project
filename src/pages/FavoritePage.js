@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components/macro'
-import Header from './../components/Header'
+import backgroundHeader from './../Images/Logo.png'
 import Card from './../components/Card'
 
 FavoritePage.propTypes = {
@@ -23,7 +23,9 @@ export default function FavoritePage({
   )
   return (
     <Wrapper>
-      <Header>Favorites</Header>
+      <h1>
+        <span></span>
+      </h1>
       {favoriteLocations.length > 0 ? (
         <ListWrapper>
           {favoriteLocations.map(
@@ -57,12 +59,21 @@ export default function FavoritePage({
 const Wrapper = styled.section`
   display: grid;
   overflow-y: auto;
-  justify-items: center;
+  place-items: center;
   width: 100%;
+  h1 {
+    background: url(${backgroundHeader});
+    height: 90px;
+    width: 300px;
+    background-size: 100%;
+    position: fixed;
+    top: 0;
+  }
 `
 
 const ListWrapper = styled.ul`
   list-style-type: none;
   padding: 0;
   width: 350px;
+  margin-top: 100px;
 `

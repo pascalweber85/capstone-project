@@ -34,12 +34,12 @@ export default function Card({
       />
 
       <CardList>
-        <img src={image} alt="" onClick={onDetail} />
+        <h3>{text}</h3>
         <div>
+          <img src={image} alt="" onClick={onDetail} />
           <h2>{title}</h2>
-          <StarRating onRating={onRating} id={id} rating={rating} />
-          <p>{text}</p>
         </div>
+        <StarRating onRating={onRating} id={id} rating={rating} />
       </CardList>
     </CardWrapper>
   )
@@ -50,34 +50,40 @@ const CardWrapper = styled.section`
 `
 
 const CardList = styled.section`
-  padding: 20px;
+  padding: 10px 20px;
   border-radius: 8px;
   box-shadow: 0 8px 16px #0006;
-  display: flex;
+  display: grid;
   gap: 10px;
-  justify-content: center;
+  justify-items: start;
   width: auto;
   max-width: 100%;
   color: black;
   background-color: whitesmoke;
 
+  div {
+    display: flex;
+    place-items: start;
+    gap: 10px;
+  }
+
   img {
     justify-self: start;
-    width: 150px;
+    width: 130px;
+    height: 130px;
     object-fit: cover;
     border-radius: 5px;
   }
 
   h2 {
-    font-size: 18px;
+    margin-left: 5px;
+    font-size: 16px;
     word-wrap: break-word;
     width: 16ch;
   }
 
-  p {
-    display: grid;
-    place-items: center;
-    justify-self: center;
-    text-align: center;
+  h3 {
+    font-size: 14px;
+    font-weight: lighter;
   }
 `
