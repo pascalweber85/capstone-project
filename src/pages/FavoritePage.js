@@ -57,8 +57,6 @@ export default function FavoritePage({
 const Wrapper = styled.section`
   color: bisque;
   font-size: 18px;
-  font-family: Roboto;
-  letter-spacing: 0.1rem;
   display: grid;
   overflow-y: auto;
   place-items: center;

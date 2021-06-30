@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components/macro'
 import Button from './../components/FavButton'
-import Header from './../components/Header'
+// import Header from './../components/Header'
 import { useHistory } from 'react-router-dom'
 
 DetailsPage.propTypes = {
@@ -20,7 +20,7 @@ export default function DetailsPage({
 
   return (
     <Wrapper>
-      <Header>Details</Header>
+      {/* <Header>Details</Header> */}
 
       <h2>{title}</h2>
       <img src={main_image_path} alt="" />
