@@ -27,27 +27,24 @@ export default function LocationPage({
       </h1>
 
       <ListWrapper>
-        {locations.map(
-          ({ id, main_image_path, title, rating_image_path, text }) => {
-            return (
-              <li>
-                <Card
-                  key={id}
-                  id={id}
-                  image={main_image_path}
-                  title={title}
-                  ratingImage={rating_image_path}
-                  text={text}
-                  isBookmarked={bookmarkedIds.includes(id)}
-                  handleBookmark={handleBookmark}
-                  onRating={onRating}
-                  rating={rating}
-                  onDetail={() => onDetail(id)}
-                />
-              </li>
-            )
-          }
-        )}
+        {locations.map(({ id, main_image_path, title, text }) => {
+          return (
+            <li>
+              <Card
+                key={id}
+                id={id}
+                image={main_image_path}
+                title={title}
+                text={text}
+                isBookmarked={bookmarkedIds.includes(id)}
+                handleBookmark={handleBookmark}
+                onRating={onRating}
+                rating={rating}
+                onDetail={() => onDetail(id)}
+              />
+            </li>
+          )
+        })}
       </ListWrapper>
     </Wrapper>
   )

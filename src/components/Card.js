@@ -7,7 +7,6 @@ Card.propTypes = {
   id: PropTypes.number,
   image: PropTypes.node,
   title: PropTypes.string,
-  ratingImage: PropTypes.node,
   text: PropTypes.string,
   onDetail: PropTypes.func,
   handleBookmark: PropTypes.func,

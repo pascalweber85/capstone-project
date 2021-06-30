@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components/macro'
+import background from './../Images/Park.jpg'
 import backgroundHeader from './../Images/Logo.png'
 import Card from './../components/Card'
 
@@ -28,26 +29,23 @@ export default function FavoritePage({
       </h1>
       {favoriteLocations.length > 0 ? (
         <ListWrapper>
-          {favoriteLocations.map(
-            ({ id, main_image_path, title, rating_image_path, text }) => {
-              return (
-                <li key={id}>
-                  <Card
-                    id={id}
-                    image={main_image_path}
-                    title={title}
-                    ratingImage={rating_image_path}
-                    text={text}
-                    handleBookmark={handleBookmark}
-                    isBookmarked={true}
-                    rating={rating}
-                    onRating={onRating}
-                    onDetail={() => onDetail(id)}
-                  />
-                </li>
-              )
-            }
-          )}
+          {favoriteLocations.map(({ id, main_image_path, title, text }) => {
+            return (
+              <li key={id}>
+                <Card
+                  id={id}
+                  image={main_image_path}
+                  title={title}
+                  text={text}
+                  handleBookmark={handleBookmark}
+                  isBookmarked={true}
+                  rating={rating}
+                  onRating={onRating}
+                  onDetail={() => onDetail(id)}
+                />
+              </li>
+            )
+          })}
         </ListWrapper>
       ) : (
         'Du hast noch keine Location ausgewählt!'
@@ -57,10 +55,18 @@ export default function FavoritePage({
 }
 
 const Wrapper = styled.section`
+  color: bisque;
+  font-size: 18px;
+  font-family: Roboto;
+  letter-spacing: 0.1rem;
   display: grid;
   overflow-y: auto;
   place-items: center;
   width: 100%;
+  background-image: url(${background});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   h1 {
     background: url(${backgroundHeader});
     height: 90px;
