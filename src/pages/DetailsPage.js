@@ -3,23 +3,22 @@ import styled from 'styled-components/macro'
 import Button from './../components/FavButton'
 import { useHistory } from 'react-router-dom'
 import Icon from './../Images/back.png'
+import { useParams } from 'react-router-dom/cjs/react-router-dom.min'
 // import Slider from '../components/Slider'
 // import data from './../image.json'
 
 DetailsPage.propTypes = {
-  history: PropTypes.func,
-  details: PropTypes.shape({
-    title: PropTypes.string,
-    main_image_path: PropTypes.string,
-    öffnungszeiten: PropTypes.array,
-    beschreibung: PropTypes.string,
-  }),
+  locations: PropTypes.array,
 }
-export default function DetailsPage({
-  details: { title, main_image_path, öffnungszeiten, beschreibung },
-}) {
-  // const imageArray = data.map(data => data.main_image_path)
-  let history = useHistory()
+export default function DetailsPage({ locations }) {
+  const history = useHistory()
+  const { id } = useParams()
+  const {
+    title,
+    main_image_path,
+    öffnungszeiten,
+    beschreibung,
+  } = locations.find(location => location.id === id)
 
   return (
     <Wrapper>
