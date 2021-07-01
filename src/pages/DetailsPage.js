@@ -3,6 +3,8 @@ import styled from 'styled-components/macro'
 import Button from './../components/FavButton'
 import { useHistory } from 'react-router-dom'
 import Icon from './../Images/back.png'
+// import Slider from '../components/Slider'
+// import data from './../image.json'
 
 DetailsPage.propTypes = {
   history: PropTypes.func,
@@ -16,10 +18,12 @@ DetailsPage.propTypes = {
 export default function DetailsPage({
   details: { title, main_image_path, öffnungszeiten, beschreibung },
 }) {
+  // const imageArray = data.map(data => data.main_image_path)
   let history = useHistory()
 
   return (
     <Wrapper>
+      {/* <Slider images={imageArray} /> */}
       <FavButton onClick={() => history.goBack()}>
         <img src={Icon} alt="" />
       </FavButton>
@@ -43,7 +47,6 @@ const Wrapper = styled.section`
   display: grid;
   overflow-y: auto;
   color: black;
-  /* margin-left: 10px; */
 `
 
 const DetailWrapper = styled.section`
@@ -78,9 +81,6 @@ const DetailImg = styled.img`
   height: 40vh;
   background-size: cover;
   object-fit: cover;
-
-  /* border: 2px solid white; */
-  /* border-radius: 10px; */
 `
 
 const FavButton = styled(Button)`

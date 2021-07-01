@@ -16,7 +16,7 @@ export default function StartPage() {
       <h1>
         <span></span>
       </h1>
-
+      {/* <Slider images={imageArray} /> */}
       <p>
         Willkommen in Leipzig. Hier kannst du coole Locations finden und zu
         deinen Favoriten hinzufügen. Viel Spaß beim Erkunden!
@@ -44,6 +44,9 @@ const Wrapper = styled.section`
   }
 
   h1 {
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
     background: url(${backgroundHeader});
     height: 90px;
     width: 300px;

@@ -66,6 +66,9 @@ const Wrapper = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   h1 {
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
     background: url(${backgroundHeader});
     height: 90px;
     width: 300px;
