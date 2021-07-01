@@ -160,6 +160,22 @@
     ]
   },
   {
+    "id": 11,
+    "title": "Nachtcafe",
+    "text": "Ausgehen & Party",
+    "main_image_path": "https://scontent-frx5-1.xx.fbcdn.net/v/t1.6435-9/122136868_10158464610134584_6819970672868909617_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=973b4a&_nc_ohc=jcX8FB18I24AX9HkiTE&_nc_ht=scontent-frx5-1.xx&oh=008f96d2035d4792ea8ee26ad47db217&oe=60E39539",
+    "beschreibung": "Die Location 'Nachtcafé' befindet sich in Leipzig. Die Location ist perfekt geeignet für Galas/Banketts. Als Bar oder Club kann sie ebenfalls genutzt werden. ",
+    "öffnungszeiten": [
+      "Montag Geschlossen",
+      "Dienstag Geschlossen",
+      "Mittwoch 22:00 - 6:00 Uhr",
+      "Donnerstag Geschlossen",
+      "Freitag Geschlossen",
+      "Samstag 22:00 - 6:00 Uhr",
+      "Sonntag Geschlossen"
+    ]
+  },
+  {
     "id": 12,
     "title": "60 Seconds to Napoli",
     "text": "Restaurant & Bar",
