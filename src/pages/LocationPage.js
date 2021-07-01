@@ -5,7 +5,7 @@ import background from './../Images/Leipzig.jpg'
 import backgroundHeader from './../Images/Logo.png'
 
 LocationPage.propTypes = {
-  id: PropTypes.number,
+  id: PropTypes.string,
   onDetail: PropTypes.func.isRequired,
   location: PropTypes.array,
   handleBookmark: PropTypes.func,
@@ -59,6 +59,7 @@ const Wrapper = styled.section`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
   h1 {
     left: 50%;
     right: 50%;
