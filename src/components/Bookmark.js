@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components/macro'
-import bmactive from './../Images/bookmark-a.png'
-import bminactive from './../Images/bookmark-i.png'
+import bmactive from './../Images/Herz2.png'
+import bminactive from './../Images/Herz1.png'
 
 Bookmark.propTypes = {
   onClick: PropTypes.func.isRequired,
@@ -24,9 +24,9 @@ export default function Bookmark({ isBookmarked, onClick }) {
 const BookmarkStyled = styled.div`
   img {
     position: relative;
-    top: 40px;
-    left: 130px;
+    top: 65px;
+    left: 300px;
     height: 33px;
-    width: 26px;
+    width: 31px;
   }
 `

@@ -1,11 +1,22 @@
 import styled from 'styled-components/macro'
-import Header from './../components/Header'
+import PropTypes from 'prop-types'
 import background from './../Images/augustusplatz.jpg'
+import backgroundHeader from './../Images/Logo.png'
+// import Slider from '../components/Slider'
+// import data from './../image.json'
+
+StartPage.propTypes = {
+  main_image_path: PropTypes.string,
+}
 
 export default function StartPage() {
+  // const imageArray = data.map(data => data.main_image_path)
   return (
     <Wrapper>
-      <Header>Leipzig Bookmarked</Header>
+      <h1>
+        <span></span>
+      </h1>
+
       <p>
         Willkommen in Leipzig. Hier kannst du coole Locations finden und zu
         deinen Favoriten hinzufügen. Viel Spaß beim Erkunden!
@@ -29,5 +40,17 @@ const Wrapper = styled.section`
     text-align: center;
     color: bisque;
     padding: 20px;
+    z-index: 1;
+  }
+
+  h1 {
+    background: url(${backgroundHeader});
+    height: 90px;
+    width: 300px;
+    background-size: 100%;
+    position: fixed;
+    top: 0;
+    place-self: center;
+    z-index: 1;
   }
 `
