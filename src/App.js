@@ -101,4 +101,5 @@ const AppGrid = styled.section`
   width: 100vw;
   height: 100vh;
   justify-items: center;
+  background-color: whitesmoke;
 `

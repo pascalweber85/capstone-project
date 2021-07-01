@@ -14,7 +14,7 @@ export default function Button(props) {
 const ButtonStyled = styled.button`
   padding: 0.35em 1.2em;
   border: 0.1em solid black;
-  border-radius: 1em;
+  border-radius: 1;
   text-align: center;
   background-color: ${props => (props.isActive ? '#ccc' : 'white')};
 `

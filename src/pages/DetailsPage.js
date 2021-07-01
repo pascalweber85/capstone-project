@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components/macro'
 import Button from './../components/FavButton'
-// import Header from './../components/Header'
 import { useHistory } from 'react-router-dom'
+import Icon from './../Images/back.png'
 
 DetailsPage.propTypes = {
   history: PropTypes.func,
@@ -20,21 +20,21 @@ export default function DetailsPage({
 
   return (
     <Wrapper>
-      {/* <Header>Details</Header> */}
+      <FavButton onClick={() => history.goBack()}>
+        <img src={Icon} alt="" />
+      </FavButton>
+      <DetailWrapper>
+        <DetailImg src={main_image_path} alt="" />
+        <h2>{title}</h2>
 
-      <h2>{title}</h2>
-      <img src={main_image_path} alt="" />
-      <h3>Öffnungszeiten:</h3>
-      <ul>
-        {öffnungszeiten.map(öffnungszeit => (
-          <li key={öffnungszeit}>{öffnungszeit}</li>
-        ))}
-      </ul>
-      <h3>Beschreibung:</h3>
-      <p>{beschreibung}</p>
-      <div>
-        <FavButton onClick={() => history.goBack()}>&lt; back</FavButton>
-      </div>
+        <p>{beschreibung}</p>
+        <h3>Öffnungszeiten:</h3>
+        <ul>
+          {öffnungszeiten.map(öffnungszeit => (
+            <li key={öffnungszeit}>{öffnungszeit}</li>
+          ))}
+        </ul>
+      </DetailWrapper>
     </Wrapper>
   )
 }
@@ -43,28 +43,53 @@ const Wrapper = styled.section`
   display: grid;
   overflow-y: auto;
   color: black;
-  justify-items: center;
+  /* margin-left: 10px; */
+`
 
-  img {
-    width: 350px;
-    border: 2px solid white;
-    border-radius: 10px;
-  }
+const DetailWrapper = styled.section`
+  display: grid;
+  overflow-y: auto;
+  color: black;
+  justify-items: left;
+  margin-top: 90px;
+  margin-left: -10px;
+
   li {
     list-style-type: none;
+    display: grid;
+    justify-items: left;
+    margin-left: -20px;
   }
 
   p {
     padding: 10px;
+    margin: 10px;
+  }
+  h2 {
+    margin-left: 20px;
+  }
+
+  h3 {
+    margin-left: 20px;
   }
 `
+const DetailImg = styled.img`
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  object-fit: cover;
+
+  /* border: 2px solid white; */
+  /* border-radius: 10px; */
+`
+
 const FavButton = styled(Button)`
-  position: absolute;
+  position: fixed;
+  margin-top: 20px;
   display: grid;
   justify-items: center;
   z-index: 2;
-  bottom: 0;
   margin-bottom: 5px;
-  left: 25%;
-  width: 50%;
+  margin-left: 10px;
+  width: 100px;
 `

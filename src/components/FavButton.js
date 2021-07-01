@@ -15,6 +15,11 @@ const FavButtonStyled = styled.button`
   font-size: 20px;
   width: 250px;
   color: whitesmoke;
-  background: linear-gradient(0deg, #483939, #9f1414);
+
   border-radius: 30px;
+
+  img {
+    max-width: 30px;
+    background: transparent;
+  }
 `

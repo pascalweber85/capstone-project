@@ -46,6 +46,7 @@ export default function Card({
 
 const CardWrapper = styled.section`
   position: relative;
+  opacity: 0.9;
 `
 
 const CardList = styled.section`
