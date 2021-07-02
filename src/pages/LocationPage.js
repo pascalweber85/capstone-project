@@ -137,7 +137,9 @@ const ListWrapper = styled.ul`
   list-style-type: none;
   padding: 0;
   width: 350px;
-  margin-top: 150px;
+  margin-top: 180px;
+  margin-bottom: 0;
+  overflow: auto;
 `
 
 const Section = styled.section`
