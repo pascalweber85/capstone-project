@@ -14,7 +14,7 @@ const FavButtonStyled = styled.button`
   padding: 12px;
   font-size: 20px;
   width: 250px;
-  color: whitesmoke;
+  color: black;
 
   border-radius: 30px;
 

@@ -4,7 +4,7 @@ import Bookmark from './../components/Bookmark'
 import StarRating from './../components/StarRating'
 
 Card.propTypes = {
-  id: PropTypes.number,
+  id: PropTypes.string,
   image: PropTypes.node,
   title: PropTypes.string,
   text: PropTypes.string,
