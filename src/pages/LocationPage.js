@@ -3,6 +3,11 @@ import PropTypes from 'prop-types'
 import Card from '../components/Card'
 import background from './../Images/Leipzig.jpg'
 import backgroundHeader from './../Images/Logo.png'
+import picture1 from './../Images/tree.png'
+import picture2 from './../Images/kamera.png'
+import picture3 from './../Images/fork.png'
+import picture4 from './../Images/champagnerglas.png'
+import picture5 from './../Images/all.png'
 import { useState } from 'react'
 
 LocationPage.propTypes = {
@@ -30,19 +35,26 @@ export default function LocationPage({
       </h1>
 
       <Section>
-        <button onClick={() => handleFilter('Sehenswürdigkeit')}>
-          Sehenswürdigkeit
-        </button>
-        <button onClick={() => handleFilter('Freizeit & Park')}>
-          Freizeit und Park
-        </button>
-        <button onClick={() => handleFilter('Restaurant & Bar')}>
-          Restaurant und Bar
-        </button>
-        <button onClick={() => handleFilter('Ausgehen & Party')}>
-          Ausgehen und Party
-        </button>
-        <button onClick={() => handleFilter(false)}>Alle</button>
+        <Button onClick={() => handleFilter('Sehenswürdigkeit')}>
+          <img src={picture2} alt="" />
+          <p>Sehens-würdigkeit</p>
+        </Button>
+        <Button onClick={() => handleFilter('Freizeit & Park')}>
+          <img src={picture1} alt="" />
+          <p>Freizeit &amp; Park</p>
+        </Button>
+        <Button onClick={() => handleFilter('Restaurant & Bar')}>
+          <img src={picture3} alt="" />
+          <p>Restaurant &amp; Bar</p>
+        </Button>
+        <Button onClick={() => handleFilter('Ausgehen & Party')}>
+          <img src={picture4} alt="" />
+          <p>Ausgehen &amp; Party</p>
+        </Button>
+        <Button onClick={() => handleFilter(false)}>
+          <img src={picture5} alt="" />
+          <p>Alle Locations</p>
+        </Button>
       </Section>
 
       <ListWrapper>
@@ -125,11 +137,31 @@ const ListWrapper = styled.ul`
   list-style-type: none;
   padding: 0;
   width: 350px;
-  margin-top: 100px;
+  margin-top: 150px;
 `
 
 const Section = styled.section`
+  display: grid;
+  grid-template-columns: 18% 18% 18% 18% 18%;
+  gap: 1%;
+  width: 100%;
+  margin-left: 3%;
+  margin-right: 2%;
   margin-top: 105px;
   position: fixed;
   z-index: 1;
+  img {
+    margin-top: 5px;
+    width: 20px;
+  }
+
+  p {
+    font-size: 10px;
+    font-family: roboto;
+    margin-top: -1px;
+  }
+`
+const Button = styled.button`
+  border-radius: 10px;
+  border: none;
 `

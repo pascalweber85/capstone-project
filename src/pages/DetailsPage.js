@@ -43,6 +43,7 @@ export default function DetailsPage({ locations }) {
 }
 
 const Wrapper = styled.section`
+  max-width: 800px;
   display: grid;
   overflow-y: auto;
   color: black;
@@ -77,6 +78,7 @@ const DetailWrapper = styled.section`
 `
 const DetailImg = styled.img`
   width: 100%;
+  max-width: 800px;
   height: 40vh;
   background-size: cover;
   object-fit: cover;
