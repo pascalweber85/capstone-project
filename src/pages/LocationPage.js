@@ -12,7 +12,7 @@ import { useState } from 'react'
 
 LocationPage.propTypes = {
   id: PropTypes.string,
-  onDetail: PropTypes.func.isRequired,
+  onDetail: PropTypes.func,
   location: PropTypes.array,
   handleBookmark: PropTypes.func,
   bookmarkedIds: PropTypes.any,
