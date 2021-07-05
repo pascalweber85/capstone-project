@@ -3,23 +3,26 @@ import styled from 'styled-components/macro'
 import Button from './../components/FavButton'
 import { useHistory } from 'react-router-dom'
 import Icon from './../Images/back.png'
+import { useParams } from 'react-router-dom/cjs/react-router-dom.min'
+// import Slider from '../components/Slider'
+// import data from './../image.json'
 
 DetailsPage.propTypes = {
-  history: PropTypes.func,
-  details: PropTypes.shape({
-    title: PropTypes.string,
-    main_image_path: PropTypes.string,
-    öffnungszeiten: PropTypes.array,
-    beschreibung: PropTypes.string,
-  }),
+  locations: PropTypes.array,
 }
-export default function DetailsPage({
-  details: { title, main_image_path, öffnungszeiten, beschreibung },
-}) {
-  let history = useHistory()
+export default function DetailsPage({ locations }) {
+  const history = useHistory()
+  const { id } = useParams()
+  const {
+    title,
+    main_image_path,
+    öffnungszeiten,
+    beschreibung,
+  } = locations.find(location => location.id === id)
 
   return (
     <Wrapper>
+      {/* <Slider images={imageArray} /> */}
       <FavButton onClick={() => history.goBack()}>
         <img src={Icon} alt="" />
       </FavButton>
@@ -40,10 +43,10 @@ export default function DetailsPage({
 }
 
 const Wrapper = styled.section`
+  max-width: 800px;
   display: grid;
   overflow-y: auto;
   color: black;
-  /* margin-left: 10px; */
 `
 
 const DetailWrapper = styled.section`
@@ -75,12 +78,10 @@ const DetailWrapper = styled.section`
 `
 const DetailImg = styled.img`
   width: 100%;
+  max-width: 800px;
   height: 40vh;
   background-size: cover;
   object-fit: cover;
-
-  /* border: 2px solid white; */
-  /* border-radius: 10px; */
 `
 
 const FavButton = styled(Button)`

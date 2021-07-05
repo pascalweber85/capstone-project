@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 
-export default function ImageSlider({ images = [], autoPlayTime = 6000 }) {
+export default function ImageSlider({ images = [], autoPlayTime = 3000 }) {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   function nextSlide(slideIndex = currentSlide + 1) {

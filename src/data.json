@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "title": "Völkerschlacht Denkmal",
     "text": "Sehenswürdigkeit",
     "main_image_path": "https://images.unsplash.com/photo-1583602690006-31db03a8b86f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGxlaXB6aWd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60",
@@ -16,7 +16,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": "2",
     "title": "Zoo Leipzig",
     "text": "Freizeit & Park",
     "main_image_path": "https://images.unsplash.com/photo-1583603082237-ec17496f233f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGxlaXB6aWclMjB6b298ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60",
@@ -32,7 +32,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": "3",
     "title": "Neues Rathaus",
     "text": "Sehenswürdigkeit",
     "main_image_path": "https://images.unsplash.com/photo-1616001029681-ff04e6bfc6c9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGVpcHppZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60",
@@ -48,7 +48,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": "4",
     "title": "Absturz",
     "text": "Ausgehen & Party",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/WQFxvDYi-Rr3_UiBeRImlg/o.jpg",
@@ -64,7 +64,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": "5",
     "title": "Auerbachs Keller",
     "text": "Restaurant & Bar",
     "main_image_path": "https://images.unsplash.com/photo-1619434863454-356cc340148f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGxlaXB6aWd8ZW58MHx8MHx8&auto=format&fit=crop&w=300&q=60",
@@ -80,7 +80,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": "6",
     "title": "Bayerischer Bahnhof",
     "text": "Restaurant & Bar",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/L8J2MV8Yex86h739GWtsWw/348s.jpg",
@@ -96,7 +96,7 @@
     ]
   },
   {
-    "id": 7,
+    "id": "7",
     "title": "Café Madrid",
     "text": "Restaurant & Bar",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/uO6ER8_cMgDNH0FAlMWo7g/348s.jpg",
@@ -112,10 +112,10 @@
     ]
   },
   {
-    "id": 8,
+    "id": "8",
     "title": "Bagel Brothers",
     "text": "Restaurant & Bar",
-    "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/VkUmxfJTc3ogJa9x6za0vA/348s.jpg",
+    "main_image_path": "https://www.leipzig-leben.de/wp-content/uploads/2016/08/bagel-brothers-leipzig.jpg",
     "beschreibung": "Eines von 2 Häusern der Bagel Brothers Restaurants in Leipzig. Hier gibt es Sandwiches, Bagels, Salate, Süßes und Kaffee sowie viele weitere Getränke.",
     "öffnungszeiten": [
       "Montag 8:00 - 21:00 Uhr",
@@ -128,7 +128,7 @@
     ]
   },
   {
-    "id": 9,
+    "id": "9",
     "title": "Sakura",
     "text": "Restaurant & Bar",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/Gd7Q7cvdxsVLARQo45AIOQ/348s.jpg",
@@ -144,7 +144,7 @@
     ]
   },
   {
-    "id": 10,
+    "id": "10",
     "title": "City-Hochhaus",
     "text": "Sehenswürdigkeit",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/b5Nk3v_LgBB-PqmChrhthg/348s.jpg",
@@ -160,7 +160,23 @@
     ]
   },
   {
-    "id": 12,
+    "id": "11",
+    "title": "Nachtcafe",
+    "text": "Ausgehen & Party",
+    "main_image_path": "https://scontent-frx5-1.xx.fbcdn.net/v/t1.6435-9/122136868_10158464610134584_6819970672868909617_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=973b4a&_nc_ohc=jcX8FB18I24AX9HkiTE&_nc_ht=scontent-frx5-1.xx&oh=008f96d2035d4792ea8ee26ad47db217&oe=60E39539",
+    "beschreibung": "Das Nachtcafe ist schon ziemlich lange im Geschäft und liefert euch die feinsten Sounds aus Black, House & Electro. Eine Menge DJs waren schon zu Gast und diese lange Historie lässt das Nachtcafe so strahlen. ",
+    "öffnungszeiten": [
+      "Montag Geschlossen",
+      "Dienstag Geschlossen",
+      "Mittwoch 22:00 - 6:00 Uhr",
+      "Donnerstag Geschlossen",
+      "Freitag Geschlossen",
+      "Samstag 22:00 - 6:00 Uhr",
+      "Sonntag Geschlossen"
+    ]
+  },
+  {
+    "id": "12",
     "title": "60 Seconds to Napoli",
     "text": "Restaurant & Bar",
     "main_image_path": "https://www.urbanite.net/media/images/locations/leipzig/959e370f780a8cb74b8aca0f561dbe2d__150x150_noop.jpg",
@@ -176,7 +192,7 @@
     ]
   },
   {
-    "id": 13,
+    "id": "13",
     "title": "Imperii",
     "text": "Restaurant & Bar",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/UX2slOH-xNkCfKeYv8a48w/348s.jpg",
@@ -192,7 +208,7 @@
     ]
   },
   {
-    "id": 14,
+    "id": "14",
     "title": "Café Maître",
     "text": "Restaurant & Bar",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/9fOgkl5v_qHbKpCRwsC5CA/348s.jpg",
@@ -208,7 +224,7 @@
     ]
   },
   {
-    "id": 15,
+    "id": "15",
     "title": "Stadthafen Leipzig",
     "text": "Freizeit & Park",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/dsDG5NmcXEYw_dZ99pz3SQ/348s.jpg",
@@ -224,7 +240,7 @@
     ]
   },
   {
-    "id": 16,
+    "id": "16",
     "title": "Wildpark",
     "text": "Freizeit & Park",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/4bGFs_47_vsvLk1DTRdLyA/348s.jpg",
@@ -240,7 +256,7 @@
     ]
   },
   {
-    "id": 17,
+    "id": "17",
     "title": "Cospudener See",
     "text": "Freizeit & Park",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/5R75-LtdTVWtM0GJtq6LHw/348s.jpg",
@@ -256,7 +272,7 @@
     ]
   },
   {
-    "id": 18,
+    "id": "18",
     "title": "Club L1",
     "text": "Ausgehen & Party",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/VIN-2dtOJfbU5I7w7ttO_A/348s.jpg",
@@ -272,7 +288,7 @@
     ]
   },
   {
-    "id": 19,
+    "id": "19",
     "title": "Staubsauger",
     "text": "Ausgehen & Party",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/ZCYVNjebC-prXTedu3O3Mg/348s.jpg",
@@ -288,7 +304,7 @@
     ]
   },
   {
-    "id": 20,
+    "id": "20",
     "title": "DarkFlower",
     "text": "Ausgehen & Party",
     "main_image_path": "https://s3-media0.fl.yelpcdn.com/bphoto/bow4ZZU5X0Y6Fj4fsMuAYA/348s.jpg",

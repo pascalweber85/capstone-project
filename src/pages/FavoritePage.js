@@ -48,7 +48,7 @@ export default function FavoritePage({
           })}
         </ListWrapper>
       ) : (
-        'Du hast noch keine Location ausgewählt!'
+        ' Du hast noch keine Location ausgewählt!'
       )}
     </Wrapper>
   )
@@ -56,7 +56,6 @@ export default function FavoritePage({
 
 const Wrapper = styled.section`
   color: bisque;
-  font-size: 18px;
   display: grid;
   overflow-y: auto;
   place-items: center;
@@ -66,6 +65,9 @@ const Wrapper = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   h1 {
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
     background: url(${backgroundHeader});
     height: 90px;
     width: 300px;

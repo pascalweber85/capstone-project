@@ -26,18 +26,6 @@ export default function Navigation() {
         <img src={Icon3} alt="" />
         <p>Favoriten</p>
       </StyledNavLink>
-      {/* {pages.map(({ title, path }) => (
-        <StyledNavLink
-          activeStyle={{
-            background: 'lightgrey',
-          }}
-          key={title}
-          exact
-          to={path}
-        >
-          {title}
-        </StyledNavLink>
-      ))} */}
     </Nav>
   )
 }

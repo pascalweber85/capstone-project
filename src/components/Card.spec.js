@@ -8,7 +8,6 @@ describe('Card', () => {
         title="Völkerschlachtdenkmal"
         text="Lorem Ipsum"
         image="number of images per card"
-        ratingImage="path/to/Image"
       />
     )
     expect(

@@ -11,8 +11,6 @@ import data from './data.json'
 
 export default function App() {
   const [locations] = useState(data)
-  const [detailsId, setDetailsId] = useState(null)
-  const details = locations.find(location => location.id === detailsId)
   const [bookmarkedIds, setBookmarkedIds] = useState(
     loadFromLocal('bookmarkedIds') ?? []
   )
@@ -50,8 +48,8 @@ export default function App() {
             rating={rating}
           />
         </Route>
-        <Route path="/DetailsPage/">
-          <DetailsPage details={details} />
+        <Route path="/DetailsPage/:id">
+          <DetailsPage locations={locations} />
         </Route>
         <Route path="/FavoritePage">
           <FavoritePage
@@ -71,7 +69,6 @@ export default function App() {
   )
 
   function showDetail(id) {
-    setDetailsId(id)
     push('/DetailsPage/' + id)
   }
 
